@@ -1,0 +1,72 @@
+"use client";
+
+import { useRef } from "react";
+import { TextReveal } from "@/components/ui/text-reveal";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+export function ShopShowcaseSection() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const imageRef = useRef<HTMLImageElement>(null);
+  
+  useGSAP(() => {
+    // Reveal the image with a subtle slide and fade when it enters the viewport
+    gsap.fromTo(imageRef.current,
+      { 
+        y: 60, 
+        opacity: 0,
+        scale: 0.95
+      },
+      {
+        y: 0,
+        opacity: 1,
+        scale: 1,
+        duration: 1.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 70%", // Trigger when top of section is 70% down the viewport
+          toggleActions: "play none none reverse" // Play on enter, reverse on leave back
+        }
+      }
+    );
+  }, { scope: sectionRef });
+
+  return (
+    <section ref={sectionRef} id="shop-showcase" className="bg-onx-white pt-16 md:pt-24 pb-8 md:pb-12 overflow-hidden">
+      
+      {/* Massive horizontal typography band spanning full width */}
+      <div className="w-full mb-24 md:mb-32 flex justify-center whitespace-nowrap">
+        <span className="text-[64px] sm:text-[96px] md:text-[128px] font-bold uppercase leading-[0.8] tracking-normal text-transparent" style={{ WebkitTextStroke: "1px #000000" }}>
+          SHOP ITEMS <span className="text-onx-red" style={{ WebkitTextStroke: "0" }}>SHOP</span> ITEMS ITEMS SHOP
+        </span>
+      </div>
+
+      <div className="max-w-[1440px] mx-auto px-5 md:px-10">
+
+        {/* Description paragraph */}
+        <div className="mx-auto max-w-[900px] text-center">
+          <p className="text-body text-xl text-onx-near-black font-medium leading-wide mb-20 md:mb-24">Precision Performance</p>
+          <TextReveal 
+            text="ONX Sports is built for those who thrive on precision, discipline, and performance. Designed as a space where focus meets action, it brings together modern training environments with a strong foundation in skill-based sports like shooting and archery."
+            className="text-body text-3xl font-medium leading-tight text-onx-near-black" 
+          />
+        </div>
+
+        {/* Centered Shotgun Image */}
+        <div className="mx-auto w-full max-w-[1000px] flex items-center justify-center -mt-16 md:-mt-32 -mb-24 md:-mb-48">
+          <img 
+            ref={imageRef}
+            src="/images/shotgun.png"  
+            alt="ONX Shotgun"
+            className="w-[700px] h-auto object-contain" 
+          />
+        </div>
+
+      </div>
+    </section>
+  );
+}
