@@ -7,7 +7,7 @@ export function FaqHeroSection() {
         alt="FAQ" 
         className="absolute inset-0 w-full h-full object-cover grayscale z-0" 
       />
-      <h1 className="relative z-20 text-[60px] sm:text-[90px] md:text-[120px] lg:text-[160px] font-bold uppercase leading-[1] text-onx-white text-center tracking-tight">
+      <h1 className="relative z-20 text-6xl sm:text-[40px] md:text-[70px] lg:text-[90px] font-normal uppercase leading-[1] text-onx-white text-center tracking-tight">
         FAQ
       </h1>
     </section>

@@ -8,7 +8,7 @@ export function ProductsCardsSection() {
           <div className="aspect-[4/6] relative bg-onx-near-black overflow-hidden flex flex-col items-center justify-center p-6">
             <img src="/images/viewall-pistol.jpg" alt="View All Pistol" className="absolute inset-0 w-full h-full object-cover" />
             <div className="absolute inset-0 bg-black/20 pointer-events-none"></div>
-            <button className="relative z-10 bg-onx-white text-onx-black px-10 py-4 text-sm uppercase font-bold tracking-[0.15em] hover:bg-onx-red hover:text-white transition-colors duration-300 shadow-xl">
+            <button className="relative z-10 text-xs bg-onx-white text-onx-black px-10 py-4 text-sm uppercase font-bold tracking-[0.15em] hover:bg-onx-red hover:text-white transition-colors duration-300 shadow-xl">
               View All
             </button>
           </div>

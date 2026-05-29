@@ -30,10 +30,10 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-12 mb-4 md:mb-8">
           {/* About column */}
           <div className="md:col-span-4 lg:col-span-5 pr-0 md:pr-12">
-            <h4 className="text-body uppercase font-semibold tracking-wider text-onx-white">
+            <h4 className="text-xl uppercase font-semibold tracking-wider text-onx-white">
               {footerAbout.title}
             </h4>
-            <p className="mt-6 text-body-sm text-onx-white/70 leading-[1.375]">
+            <p className="mt-6 text-base text-onx-white/70 leading-[1.375]">
               {footerAbout.description}
             </p>
           </div>
@@ -41,7 +41,7 @@ export function Footer() {
           {/* Link columns */}
           {footerColumns.map((column) => (
             <div key={column.title} className="md:col-span-2">
-              <h4 className="text-body uppercase font-semibold tracking-wider text-onx-white">
+              <h4 className="text-xl uppercase font-semibold tracking-wider text-onx-white">
                 {column.title}
               </h4>
               <ul className="mt-6 flex flex-col gap-[17px]">
@@ -49,7 +49,7 @@ export function Footer() {
                   <li key={link.label}>
                     <Link
                       href={link.href}
-                      className="text-body-sm text-onx-white/70 hover:text-onx-red transition-colors"
+                      className="text-base text-onx-white/70 hover:text-onx-red transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -61,10 +61,10 @@ export function Footer() {
 
           {/* Newsletter column */}
           <div className="md:col-span-4 lg:col-span-3">
-            <h4 className="text-body uppercase font-semibold tracking-wider text-onx-white">
+            <h4 className="text-xl uppercase font-semibold tracking-wider text-onx-white">
               {footerNewsletter.title}
             </h4>
-            <p className="mt-6 text-body-sm text-onx-white/70 leading-[1.375]">
+            <p className="mt-6 text-base text-onx-white/70 leading-[1.375]">
               {footerNewsletter.description}
             </p>
             <NewsletterForm

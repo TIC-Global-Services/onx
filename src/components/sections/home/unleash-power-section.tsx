@@ -37,10 +37,10 @@ export function UnleashPowerSection() {
         <div className="w-full h-[400px] sm:h-[500px] md:h-[700px] lg:h-[900px] bg-onx-near-black/5 flex items-center justify-center mb-16 md:mb-24 relative overflow-hidden group">
           
           <div className="absolute top-8 left-8 md:top-12 md:left-12 z-30 pointer-events-none">
-            <span className="text-[12px] md:text-[14px] uppercase font-bold tracking-[0.3em] text-onx-near-black">GUN</span>
+            <span className="text-xs md:text-sm uppercase font-bold tracking-[0.3em] text-onx-near-black">GUN</span>
           </div>
           <div className="absolute top-8 right-8 md:top-12 md:right-12 z-30 pointer-events-none">
-            <span className="text-[12px] md:text-[14px] uppercase font-bold tracking-[0.3em] text-onx-near-black">PISTOL</span>
+            <span className="text-xs md:text-sm uppercase font-bold tracking-[0.3em] text-onx-near-black">PISTOL</span>
           </div>
           
           {/* Base Image (revealed when slider moves left) */}
@@ -102,12 +102,15 @@ export function UnleashPowerSection() {
         </div>
 
         {/* Huge Typography */}
-        <div className="w-full max-w-[1200px] text-center mt-8">
-          <h2 className="text-[50px] sm:text-[70px] md:text-[100px] lg:text-[140px] font-bold uppercase leading-[1] tracking-[-0.02em] text-onx-near-black">
+        <div className="w-full max-w-[750px] text-center mt-4">
+          <h2 className="text-[50px] sm:text-[70px] md:text-[140px] lg:text-[140px] font-light uppercase leading-[1] tracking-[-0.02em] text-onx-near-black">
             ONX DELIVERS
             <br />
             POWER.
           </h2>
+          <p className="text-xs  font-bold uppercase tracking-wider text-onx-black mt-6">
+ONX is engineered for precision, built to deliver consistent performance when it matters most.<br />
+Every detail is refined for control, reliability, and a seamless experience you can trust.</p>
         </div>
 
       </div>

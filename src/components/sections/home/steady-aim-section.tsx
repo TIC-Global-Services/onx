@@ -12,10 +12,10 @@ export function SteadyAimSection() {
           
           {/* Left Text content */}
           <div className="mt-12 md:mt-32">
-            <h3 className="block text-[20px] font-bold uppercase tracking-widest text-onx-black mb-4">
+            <h3 className="block text-xl font-bold uppercase tracking-widest text-onx-black mb-4">
               Focus
             </h3>
-            <h2 className="text-[44px] sm:text-[56px] md:text-[72px] lg:text-[88px] font-bold uppercase leading-tight tracking-widest text-onx-black -ml-1">
+            <h2 className="text-[44px] sm:text-[56px] md:text-7xl lg:text-80px] font-bold uppercase leading-tight tracking-widest text-onx-black -ml-1">
               STEADY AIM.
               <br />
               PERFECT HIT.

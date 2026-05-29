@@ -11,23 +11,23 @@ export function TestimonialSection({ testimonial }: TestimonialSectionProps) {
       <div className="grid grid-cols-1 md:grid-cols-2 min-h-[600px] lg:min-h-[800px]">
         
         {/* Left: Testimonial Block */}
-        <div className="bg-onx-white flex flex-col justify-between p-10 md:p-16 lg:p-24 h-full">
+        <div className="bg-onx-white flex flex-col justify-between p-10 md:p-16 lg:p-20 h-full">
           <div className="max-w-[500px]">
             {/* Stars and Author / Product */}
             <div className="flex items-center gap-2 mb-10">
               <span className="text-onx-near-black text-sm tracking-[0.2em] leading-none">★★★★</span>
-              <span className="text-[12px] font-bold uppercase tracking-widest text-onx-near-black/50 leading-none mt-[2px]">
+              <span className="text-xs font-bold uppercase tracking-widest text-onx-near-black/50 leading-none mt-[2px]">
                 — {testimonial.author} / {testimonial.product}
               </span>
             </div>
             
             {/* Quote */}
-            <h3 className="text-[28px] md:text-[36px] font-bold uppercase leading-[1.2] text-onx-near-black mb-10">
-              "{testimonial.quote}"
+            <h3 className="text-[28px] md:text-[32px] font-semibold uppercase leading-[1.2] text-onx-near-black mb-10">
+              {testimonial.quote}
             </h3>
             
             {/* Author name bottom */}
-            <span className="block text-[14px] font-bold uppercase tracking-widest text-onx-black">
+            <span className="block text-xs font-normal uppercase tracking-widest text-onx-black">
               {testimonial.author}
             </span>
           </div>

@@ -5,7 +5,7 @@ export function StoryVideoSection() {
         
         {/* Left: Text */}
         <div className="max-w-[600px] w-full md:w-1/2">
-          <h3 className="text-[20px] sm:text-[28px] md:text-[32px] lg:text-[40px] font-bold uppercase leading-[1.1] tracking-[-0.01em] text-onx-near-black">
+          <h3 className="text-xl sm:text-[28px] md:text-[32px] lg:text-[40px] font-bold uppercase leading-[1.1] tracking-[-0.01em] text-onx-near-black">
             ONX SPORTS IS BUILT FOR PRECISION, FOCUS, AND CONTROL. A MODERN SPACE FOR SHOOTING, DARTS, AND ARCHERY WHERE SKILL MEETS DISCIPLINE AND PERFECTION TAKES FOCUS.
           </h3>
         </div>
@@ -18,7 +18,7 @@ export function StoryVideoSection() {
              className="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-multiply group-hover:scale-105 transition-transform duration-700"
            />
            <div className="w-16 h-16 md:w-20 md:h-20 bg-onx-white rounded-sm flex items-center justify-center z-10 shadow-xl group-hover:bg-onx-near-black transition-colors duration-300">
-             <span className="text-onx-near-black text-[20px] md:text-[24px] ml-1 group-hover:text-onx-white transition-colors duration-300">▶</span>
+              <span className="text-onx-near-black text-xl md:text-2xl ml-1 group-hover:text-onx-white transition-colors duration-300">▶</span>
            </div>
         </div>
 

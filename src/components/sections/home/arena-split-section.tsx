@@ -8,11 +8,11 @@ export function ArenaSplitSection() {
           <img src="/images/drawnfocus.png" alt="ONX Arena" className="absolute inset-0 w-full h-full object-cover z-0" />
           <div className="absolute inset-0 bg-black/20 z-0 pointer-events-none"></div>
           
-          <div className="relative z-10 max-w-[500px]">
-            <h3 className="text-[32px] md:text-[42px] font-bold uppercase text-onx-white leading-none mb-6">
+          <div className="relative z-10 right-12 max-w-[400px]">
+            <h3 className="text-[32px] md:text-[42px] font-normal uppercase text-onx-white leading-none mb-6">
               DRAW & <span className="bg-onx-white text-black px-4 py-4 inline-block">FOCUS</span>
             </h3>
-            <p className="text-onx-white/90 text-lg md:text-xl font-medium leading-relaxed">
+            <p className="text-onx-white/90 text-sm md:text-sm font-medium leading-tight uppercase">
               Where focus sharpens into precision, every draw, aim, and release is crafted to perfection—training your control, building discipline, and delivering every arrow exactly where it belongs.
             </p>
           </div>

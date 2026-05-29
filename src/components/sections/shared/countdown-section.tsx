@@ -55,7 +55,7 @@ export function CountdownSection({ label, endDate }: CountdownSectionProps) {
   return (
     <section className="bg-onx-dark-gray py-8">
       <Container>
-        <p className="text-center text-small uppercase tracking-wider text-onx-white/60">
+        <p className="text-center text-xs uppercase tracking-wider text-onx-white/60">
           {label}
         </p>
         <div className="mt-4 flex items-center justify-center gap-3">
@@ -75,12 +75,12 @@ export function CountdownSection({ label, endDate }: CountdownSectionProps) {
 function CountdownUnit({ value, unit }: { value: string; unit: string }) {
   return (
     <div className="text-center">
-      <span className="text-small text-onx-white">{value}</span>
+      <span className="text-xs text-onx-white">{value}</span>
       <span className="ml-1 text-xs uppercase text-onx-white/60">{unit}</span>
     </div>
   );
 }
 
 function Separator() {
-  return <span className="text-small text-onx-red">:</span>;
+  return <span className="text-xs text-onx-red">:</span>;
 }

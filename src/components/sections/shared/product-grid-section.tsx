@@ -19,10 +19,10 @@ export function ProductGridSection({
       <Container>
         {/* Section header */}
         <div className="mb-12 flex items-center justify-between">
-          <h2 className="text-heading uppercase text-onx-white">{title}</h2>
+          <h2 className="text-[40px] uppercase text-onx-white">{title}</h2>
           <Link
             href={viewAllHref}
-            className="text-small uppercase text-onx-white/60 hover:text-onx-red transition-colors"
+            className="text-xs uppercase text-onx-white/60 hover:text-onx-red transition-colors"
           >
             View all
           </Link>

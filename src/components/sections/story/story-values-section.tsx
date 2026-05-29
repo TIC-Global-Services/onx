@@ -25,7 +25,7 @@ export function StoryValuesSection() {
       {/* Marquee Heading */}
       <div className="w-full overflow-hidden whitespace-nowrap mb-4 md:mb-4 flex relative">
         <div className="animate-marquee-slow inline-flex whitespace-nowrap">
-          <h2 className="text-[80px] sm:text-[45px] md:text-[60px] lg:text-[90px] font-normal uppercase leading-tight tracking-tight pr-12">
+          <h2 className="text-9xl sm:text-[45px] md:text-6xl lg:text-[90px] font-normal uppercase leading-tight tracking-tight pr-12">
             PURPOSE, DRIVEN BY PASSION, DEFINED BY TIME. PURPOSE, DRIVEN BY PASSION, DEFINED BY TIME.
           </h2>
           
@@ -47,13 +47,13 @@ export function StoryValuesSection() {
         <div className="flex items-center gap-6 mb-16 md:mb-32">
           <button 
             onClick={() => setActiveTab("driven")}
-            className={`text-[12px] md:text-[14px] font-bold tracking-[0.2em] uppercase transition-colors ${activeTab === "driven" ? "text-onx-white" : "text-onx-white/40 hover:text-onx-white/80"}`}
+            className={`text-xs md:text-sm font-bold tracking-[0.2em] uppercase transition-colors ${activeTab === "driven" ? "text-onx-white" : "text-onx-white/40 hover:text-onx-white/80"}`}
           >
             DRIVEN
           </button>
           <button 
             onClick={() => setActiveTab("precise")}
-            className={`text-[12px] md:text-[14px] font-bold tracking-[0.2em] uppercase transition-colors ${activeTab === "precise" ? "text-onx-white" : "text-onx-white/40 hover:text-onx-white/80"}`}
+            className={`text-xs md:text-sm font-bold tracking-[0.2em] uppercase transition-colors ${activeTab === "precise" ? "text-onx-white" : "text-onx-white/40 hover:text-onx-white/80"}`}
           >
             PRECISE.
           </button>
@@ -71,10 +71,10 @@ export function StoryValuesSection() {
                 exit={{ opacity: 0, filter: "blur(10px)", y: -15 }}
                 transition={{ duration: 0.4, ease: "easeInOut" }}
               >
-                <h3 className="text-[40px] sm:text-[48px] md:text-[56px] font-normal uppercase tracking-wider mb-6">
+                <h3 className="text-[40px] sm:text-5xl md:text-[56px] font-normal uppercase tracking-wider mb-6">
                   {data.title}
                 </h3>
-                <p className="text-[13px] md:text-[14px] text-onx-white/80 leading-[1.6] uppercase tracking-wider">
+                <p className="text-[13px] md:text-sm text-onx-white/80 leading-[1.6] uppercase tracking-wider">
                   {data.text}
                 </p>
               </motion.div>

@@ -32,7 +32,7 @@ function AccordionItem({ item }: { item: FaqItem }) {
         onClick={() => setIsOpen(!isOpen)}
         className="w-full py-6 flex items-center justify-between text-left group outline-none"
       >
-        <span className="text-[12px] md:text-[14px] font-bold uppercase tracking-wider text-onx-near-black group-hover:text-onx-red transition-colors">
+        <span className="text-xs md:text-sm font-bold uppercase tracking-wider text-onx-near-black group-hover:text-onx-red transition-colors">
           {item.question}
         </span>
         <ChevronDown 
@@ -43,7 +43,7 @@ function AccordionItem({ item }: { item: FaqItem }) {
       <div 
         className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[200px] pb-6 opacity-100' : 'max-h-0 opacity-0'}`}
       >
-        <p className="text-[13px] md:text-[14px] text-onx-near-black/70 leading-[1.6]">
+        <p className="text-[13px] md:text-sm text-onx-near-black/70 leading-[1.6]">
           {item.answer}
         </p>
       </div>
@@ -57,24 +57,24 @@ export function FaqContentSection() {
       <div className="max-w-[1440px] mx-auto px-5 md:px-10">
         
         {/* Intro Header */}
-        <div className="flex flex-col items-center text-center max-w-[800px] mx-auto mb-24 md:mb-32">
+        <div className="flex flex-col items-center text-center max-w-full mx-auto mb-24 md:mb-32">
           <div className="flex items-center gap-2 mb-8">
             <div className="w-2 h-2 bg-onx-near-black"></div>
-            <span className="text-[10px] md:text-[12px] uppercase font-bold tracking-[0.3em] text-onx-near-black">
+            <span className="text-[10px] md:text-xs uppercase font-normal tracking-tight text-onx-near-black">
               ABOUT THIS COLLECTION
             </span>
           </div>
 
-          <h2 className="text-[32px] sm:text-[48px] md:text-[60px] lg:text-[72px] font-bold uppercase leading-[1.1] text-onx-near-black mb-8 tracking-tight">
+          <h2 className="text-[32px] sm:text-[28px] md:text-[32px] lg:text-[45px] font-bold uppercase leading-[1.1] text-onx-near-black mb-8 tracking-tight">
             FREQUENTLY ASKED<br/>QUESTIONS
           </h2>
 
-          <p className="text-[14px] md:text-[16px] text-onx-near-black/70 leading-[1.6] mb-12">
+          <p className="text-sm md:text-xl text-onx-near-black leading-[1.] mb-12">
             Find answers to the most common questions about our products, orders, and services. This section is designed to help you get clear, quick information so you can focus on performance without any hassle.
           </p>
 
           <div className="flex items-center justify-center">
-            <button className="mt-10 bg-onx-white border border-onx-near-black text-onx-black px-10 py-4 text-sm uppercase font-bold tracking-[0.15em] hover:bg-onx-black hover:text-white transition-colors shadow-sm">
+            <button className="mt-2 bg-onx-white border border-onx-near-black text-onx-black px-10 py-4 text-sm uppercase font-bold tracking-[0.15em] hover:bg-onx-black hover:text-white transition-colors shadow-sm">
             Contact Us
           </button>
           </div>
@@ -87,7 +87,7 @@ export function FaqContentSection() {
           <div>
             <div className="flex items-center gap-4 mb-8">
               <Package size={24} className="text-onx-near-black" strokeWidth={1.5} />
-              <h3 className="text-[14px] md:text-[16px] uppercase font-bold tracking-[0.2em] text-onx-near-black">
+              <h3 className="text-base md:text-2xl uppercase font-bold tracking-[0.2em] text-onx-near-black">
                 ORDER
               </h3>
             </div>
@@ -102,7 +102,7 @@ export function FaqContentSection() {
           <div>
             <div className="flex items-center gap-4 mb-8">
               <Truck size={24} className="text-onx-near-black" strokeWidth={1.5} />
-              <h3 className="text-[14px] md:text-[16px] uppercase font-bold tracking-[0.2em] text-onx-near-black">
+              <h3 className="text-base md:text-2xl uppercase font-bold tracking-[0.2em] text-onx-near-black">
                 SHIPPING
               </h3>
             </div>

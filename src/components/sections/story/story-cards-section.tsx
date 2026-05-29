@@ -52,16 +52,16 @@ export function StoryCardsSection() {
             
             <div className="relative z-10 flex items-center gap-2">
               <div className={`w-2 h-2 ${card.squareClass}`}></div>
-              <span className={`text-[10px] md:text-[12px] uppercase tracking-tight font-normal ${card.textClass}`}>
+              <span className={`text-[10px] md:text-xs uppercase tracking-tight font-normal ${card.textClass}`}>
                 {card.text}
               </span>
             </div>
 
-            <h2 className={`relative z-10 text-[60px] sm:text-[80px] md:text-[60px] lg:text-[100px] xl:text-[120px] font-bold uppercase leading-[1] tracking-tight ${card.textClass}`}>
+            <h2 className={`relative z-10 text-6xl sm:text-9xl md:text-6xl lg:text-[140px] xl:text-[140px] font-bold uppercase leading-[1] tracking-tight ${card.textClass}`}>
               {card.title}
             </h2>
 
-            <Link href="#" className={`relative z-10 px-8 py-4 text-[12px] md:text-[13px] font-bold uppercase tracking-wider transition-colors ${card.btnClass}`}>
+            <Link href="#" className={`relative z-10 px-8 py-4 text-xs md:text-[13px] font-bold uppercase tracking-wider transition-colors ${card.btnClass}`}>
               {card.action}
             </Link>
 

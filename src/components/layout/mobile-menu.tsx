@@ -133,14 +133,14 @@ function MainMenuPanel({
   onClose: () => void;
 }) {
   return (
-    <ul className="flex flex-col gap-6 md:gap-8">
+    <ul className="flex flex-col gap-8 md:gap-12">
       {mainNavItems.map((item) => (
         <li key={item.label}>
           {item.children ? (
             <button
               type="button"
               onClick={() => onItemClick(item.label)}
-              className="flex items-center gap-4 text-[50px] sm:text-[70px] md:text-[90px] lg:text-[110px] font-bold uppercase leading-[0.9] tracking-[-0.02em] text-black hover:text-onx-red transition-colors text-left"
+              className="flex items-center gap-4 text-[64px] font-normal uppercase leading-[0.9] tracking-[-0.02em] text-black hover:text-onx-red transition-colors text-left"
             >
               {item.label}
               <ArrowRight size={40} strokeWidth={1} className="md:w-[60px] md:h-[60px]" />
@@ -149,7 +149,7 @@ function MainMenuPanel({
             <Link
               href={item.href}
               onClick={onClose}
-              className="block text-[50px] sm:text-[70px] md:text-[90px] lg:text-[110px] font-bold uppercase leading-[0.9] tracking-[-0.02em] text-black hover:text-onx-red transition-colors"
+              className="block text-[64px] font-normal uppercase leading-[0.9] tracking-[-0.02em] text-black hover:text-onx-red transition-colors"
             >
               {item.label}
             </Link>
@@ -170,13 +170,13 @@ function SubmenuPanel({
   if (!item || !item.children) return null;
 
   return (
-    <ul className="flex flex-col gap-6 md:gap-8">
+    <ul className="flex flex-col gap-8 md:gap-12">
       {item.children.map((child) => (
         <li key={child.label}>
           <Link
             href={child.href}
             onClick={onClose}
-            className="block text-[40px] sm:text-[60px] md:text-[80px] font-bold uppercase leading-tight tracking-[-0.02em] text-black hover:text-onx-red transition-colors"
+            className="block text-[64px] font-normal uppercase leading-tight tracking-[-0.02em] text-black hover:text-onx-red transition-colors"
           >
             {child.label}
           </Link>

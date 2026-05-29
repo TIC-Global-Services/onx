@@ -7,7 +7,7 @@ export function ContactHeroSection() {
         alt="Contact Us" 
         className="absolute inset-0 w-full h-full object-cover z-0 grayscale" 
       />
-      <h1 className="relative z-20 text-[50px] sm:text-[70px] md:text-[90px] lg:text-[110px] font-bold uppercase leading-[1] text-onx-white text-center tracking-tight">
+      <h1 className="relative z-20 text-[50px] sm:text-[70px] md:text-[80px] lg:text-[90px] font-normal uppercase leading-[1] text-onx-white text-center tracking-tight">
         CONTACT US
       </h1>
     </section>

@@ -40,7 +40,7 @@ export function ShopShowcaseSection() {
       
       {/* Massive horizontal typography band spanning full width */}
       <div className="w-full mb-24 md:mb-32 flex justify-center whitespace-nowrap">
-        <span className="text-[64px] sm:text-[96px] md:text-[128px] font-bold uppercase leading-[0.8] tracking-normal text-transparent" style={{ WebkitTextStroke: "1px #000000" }}>
+        <span className="text-[64px] sm:text-8xl md:text-[140px] font-bold uppercase leading-[0.8] tracking-normal text-transparent" style={{ WebkitTextStroke: "1px #000000" }}>
           SHOP ITEMS <span className="text-onx-red" style={{ WebkitTextStroke: "0" }}>SHOP</span> ITEMS ITEMS SHOP
         </span>
       </div>
@@ -49,10 +49,10 @@ export function ShopShowcaseSection() {
 
         {/* Description paragraph */}
         <div className="mx-auto max-w-[900px] text-center">
-          <p className="text-body text-xl text-onx-near-black font-medium leading-wide mb-20 md:mb-24">Precision Performance</p>
+          <p className="text-xl text-xl text-onx-near-black font-medium leading-wide mb-20">Precision Performance</p>
           <TextReveal 
             text="ONX Sports is built for those who thrive on precision, discipline, and performance. Designed as a space where focus meets action, it brings together modern training environments with a strong foundation in skill-based sports like shooting and archery."
-            className="text-body text-3xl font-medium leading-tight text-onx-near-black" 
+            className="text-3xl text-3xl font-medium leading-tight text-onx-near-black" 
           />
         </div>
 

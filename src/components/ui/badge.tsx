@@ -9,7 +9,7 @@ export function Badge({ children, className }: BadgeProps) {
   return (
     <span
       className={clsx(
-        "inline-flex items-center bg-onx-red px-4 py-1 text-badge uppercase text-onx-white",
+        "inline-flex items-center bg-onx-red px-4 py-1 text-[13px] uppercase text-onx-white",
         className
       )}
     >

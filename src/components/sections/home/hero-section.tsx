@@ -45,17 +45,17 @@ export function HeroSection() {
           {/* Left Text Column */}
           <div className="flex flex-col items-start z-10">
             <h1 className="flex flex-col">
-              <span className="text-[64px] sm:text-[80px] md:text-[100px] lg:text-[140px] font-bold uppercase leading-tight tracking-[-0.02em] text-onx-red" style={{ WebkitTextStroke: "2px var(--color-onx-red)" }}>
+              <span className="text-[64px] sm:text-9xl md:text-[80px] lg:text-8xl font-bold uppercase leading-tight tracking-[-0.02em] text-onx-red" style={{ WebkitTextStroke: "2px var(--color-onx-red)" }}>
                 BUILT TO
               </span>
-              <span className="text-[64px] sm:text-[80px] md:text-[100px] lg:text-[140px] font-bold uppercase leading-tight tracking-[-0.02em] text-onx-white" style={{ WebkitTextStroke: "2px var(--color-onx-red)" }}>
+              <span className="text-[64px] sm:text-9xl md:text-[80px] lg:text-8xl font-bold uppercase leading-tight tracking-[-0.02em] text-onx-white" style={{ WebkitTextStroke: "2px var(--color-onx-red)" }}>
                 DECIDE
               </span>
             </h1>
             
             <Link
               href="/gears"
-              className="mt-10 w-[229px] h-[83px] flex items-center justify-center bg-onx-red text-onx-white text-label-lg uppercase tracking-[0.15em] hover:bg-onx-black transition-colors duration-300"
+              className="mt-10 w-[229px] h-[83px] flex items-center justify-center bg-onx-red text-onx-white text-[32px] uppercase tracking-tight font-bold hover:bg-onx-black transition-colors duration-300"
             >
               SHOP NOW
             </Link>

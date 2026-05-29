@@ -14,7 +14,7 @@ export function ProductCard({ product, className }: ProductCardProps) {
       <div className="relative aspect-[375/520] overflow-hidden bg-onx-warm-light">
         {/* Placeholder image */}
         <div className="flex h-full w-full items-center justify-center bg-onx-warm-gray">
-          <span className="text-small uppercase text-onx-near-black/40">
+          <span className="text-xs uppercase text-onx-near-black/40">
             {product.name}
           </span>
         </div>
@@ -37,10 +37,10 @@ export function ProductCard({ product, className }: ProductCardProps) {
       {/* Product info */}
       <div className="mt-4 flex items-start justify-between gap-2">
         <div>
-          <h3 className="text-small uppercase text-onx-white">
+          <h3 className="text-xs uppercase text-onx-white">
             {product.name}
           </h3>
-          <p className="mt-1 text-small text-onx-white">
+          <p className="mt-1 text-xs text-onx-white">
             ₹{product.price.toLocaleString("en-IN")}
           </p>
         </div>
@@ -51,7 +51,7 @@ export function ProductCard({ product, className }: ProductCardProps) {
         <Button
           variant="secondary"
           href={`/products/${product.slug}`}
-          className="h-[50px] w-full text-label-lg"
+          className="h-[50px] w-full text-lg"
         >
           Add to Cart
         </Button>

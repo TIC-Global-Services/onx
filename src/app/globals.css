@@ -6,7 +6,7 @@
   --color-onx-black:       #000000;
   --color-onx-near-black:  #1C1C1C;
   --color-onx-warm-light:  #ECEBE9;
-  --color-onx-red:         #E32124;
+  --color-onx-red:         #FB251A;
   --color-onx-dark-gray:   #121212;
   --color-onx-warm-gray:   #E3DEDB;
   --color-onx-light-gray:  #F6F6F6;
@@ -69,10 +69,6 @@
   --text-nav-cta--line-height: 1;
   --text-nav-cta--font-weight: 700;
 
-  --text-body-lg:      30px;
-  --text-body-lg--line-height: 1.2;
-  --text-body-lg--font-weight: 400;
-
   --text-body:         20px;
   --text-body--line-height: 1.3;
   --text-body--font-weight: 400;
@@ -101,17 +97,7 @@
   --text-small--line-height: 1;
   --text-small--font-weight: 400;
 
-  --text-xs:           11px;
-  --text-xs--line-height: 1;
-  --text-xs--font-weight: 400;
-
   --text-micro:        10px;
   --text-micro--line-height: 1.2;
   --text-micro--font-weight: 300;
-}
-
-/* ── Base styles ── */
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }

@@ -33,7 +33,7 @@ export function FeaturesBarSection({ features }: FeaturesBarSectionProps) {
                     <IconComponent size={24} strokeWidth={1.5} />
                   </span>
                 )}
-                <span className="text-small uppercase tracking-wider text-onx-white/60">
+                <span className="text-xs uppercase tracking-wider text-onx-white/60">
                   {feature.label}
                 </span>
               </div>
