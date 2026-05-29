@@ -43,26 +43,26 @@ export function HeroSection() {
         <div className="grid grid-cols-1 md:grid-cols-[1fr_1.2fr] gap-8 items-start pt-10 md:pt-16">
           
           {/* Left Text Column */}
-          <div className="flex flex-col items-start z-10">
+          <div className="flex flex-col items-center text-center md:items-start md:text-left z-10">
             <h1 className="flex flex-col">
-              <span className="text-[64px] sm:text-9xl md:text-[80px] lg:text-8xl font-bold uppercase leading-tight tracking-[-0.02em] text-onx-red" style={{ WebkitTextStroke: "2px var(--color-onx-red)" }}>
+              <span className="text-[64px] sm:text-[80px] md:text-8xl lg:text-9xl font-bold uppercase leading-[1.1] md:leading-tight tracking-[-0.02em] text-onx-red" style={{ WebkitTextStroke: "2px var(--color-onx-red)" }}>
                 BUILT TO
               </span>
-              <span className="text-[64px] sm:text-9xl md:text-[80px] lg:text-8xl font-bold uppercase leading-tight tracking-[-0.02em] text-onx-white" style={{ WebkitTextStroke: "2px var(--color-onx-red)" }}>
+              <span className="text-[64px] sm:text-[80px] md:text-8xl lg:text-9xl font-bold uppercase leading-[1.1] md:leading-tight tracking-[-0.02em] text-onx-white" style={{ WebkitTextStroke: "2px var(--color-onx-red)" }}>
                 DECIDE
               </span>
             </h1>
             
             <Link
               href="/gears"
-              className="mt-10 w-[229px] h-[83px] flex items-center justify-center bg-onx-red text-onx-white text-[32px] uppercase tracking-tight font-bold hover:bg-onx-black transition-colors duration-300"
+              className="mt-8 md:mt-10 w-[180px] h-[60px] md:w-[229px] md:h-[83px] flex items-center justify-center bg-onx-red text-onx-white text-xl md:text-[32px] uppercase tracking-tight font-bold hover:bg-onx-black transition-colors duration-300"
             >
               SHOP NOW
             </Link>
           </div>
 
           {/* Right Stripes/Image Collage Column */}
-          <div className="relative h-[450px] md:h-[650px] lg:h-[750px] w-full flex justify-end items-center gap-4 md:gap-6 overflow-visible pr-4 md:pr-2 skew-x-[-10deg] -translate-y-20 md:-translate-y-36">
+          <div className="relative h-[450px] md:h-[650px] lg:h-[750px] w-full flex justify-end items-center gap-4 md:gap-6 overflow-visible pr-4 md:pr-2 skew-x-[-10deg] translate-x-6 md:translate-x-0 md:-translate-y-36 mt-12 md:mt-0">
             
             {/* Stripe 1: Earmuffs (From Bottom) */}
             <motion.div 

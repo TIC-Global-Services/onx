@@ -2,10 +2,10 @@ export function ProductsCardsSection() {
   return (
     <section id="products-cards" className="bg-onx-white py-4 md:py-8">
       <div className="w-full px-2 md:px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="flex overflow-x-auto snap-x snap-mandatory md:grid md:grid-cols-3 gap-4 pb-4 md:pb-0">
           
           {/* Card 1: View All Image */}
-          <div className="aspect-[4/6] relative bg-onx-near-black overflow-hidden flex flex-col items-center justify-center p-6">
+          <div className="min-w-[85vw] md:min-w-0 snap-center aspect-[4/6] relative bg-onx-near-black overflow-hidden flex flex-col items-center justify-center p-6">
             <img src="/images/viewall-pistol.jpg" alt="View All Pistol" className="absolute inset-0 w-full h-full object-cover" />
             <div className="absolute inset-0 bg-black/20 pointer-events-none"></div>
             <button className="relative z-10 text-xs bg-onx-white text-onx-black px-10 py-4 text-sm uppercase font-bold tracking-[0.15em] hover:bg-onx-red hover:text-white transition-colors duration-300 shadow-xl">
@@ -14,7 +14,7 @@ export function ProductsCardsSection() {
           </div>
 
           {/* Card 2: Handgun card */}
-          <div className="aspect-[4/6] bg-onx-warm-light flex flex-col items-center justify-between p-8 text-center relative group">
+          <div className="min-w-[85vw] md:min-w-0 snap-center aspect-[4/6] bg-onx-warm-light flex flex-col items-center justify-between p-8 text-center relative group">
             <div className="w-full text-left">
               <span className="text-[10px] uppercase font-bold tracking-widest text-onx-red">01</span>
             </div>
@@ -29,7 +29,7 @@ export function ProductsCardsSection() {
           </div>
 
           {/* Card 3: Rifle card */}
-          <div className="aspect-[4/6] bg-onx-warm-light flex flex-col items-center justify-between p-8 text-center relative group">
+          <div className="min-w-[85vw] md:min-w-0 snap-center aspect-[4/6] bg-onx-warm-light flex flex-col items-center justify-between p-8 text-center relative group">
             <div className="w-full text-left">
               <span className="text-[10px] uppercase font-bold tracking-widest text-onx-red">02</span>
             </div>

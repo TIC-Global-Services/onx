@@ -69,7 +69,7 @@ export function ContactInfoSection() {
           <img 
             src="/images/contact/contact-gun.jpg" 
             alt="Handgun closeup" 
-            className="absolute inset-0 w-full h-full object-[right_center] scale-250 grayscale" 
+            className="absolute inset-0 w-full h-full object-center scale-250 grayscale" 
           />
         </div>
 

@@ -65,11 +65,11 @@ export function FaqContentSection() {
             </span>
           </div>
 
-          <h2 className="text-[32px] sm:text-[28px] md:text-[32px] lg:text-[45px] font-bold uppercase leading-[1.1] text-onx-near-black mb-8 tracking-tight">
+          <h2 className="text-[28px] sm:text-[32px] md:text-[40px] lg:text-[45px] font-bold uppercase leading-[1.1] text-onx-near-black mb-8 tracking-tight">
             FREQUENTLY ASKED<br/>QUESTIONS
           </h2>
 
-          <p className="text-sm md:text-xl text-onx-near-black leading-[1.] mb-12">
+          <p className="text-sm md:text-xl text-onx-near-black leading-[1.6] mb-12">
             Find answers to the most common questions about our products, orders, and services. This section is designed to help you get clear, quick information so you can focus on performance without any hassle.
           </p>
 

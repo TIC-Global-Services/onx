@@ -47,7 +47,7 @@ export function UnleashPowerSection() {
           <img 
             src="/images/pistol2.png" 
             alt="Pistol 2" 
-            className="absolute inset-0 w-full h-full object-cover object-top pointer-events-none " 
+            className="absolute inset-0 w-full h-full object-cover object-center md:object-top pointer-events-none " 
           />
 
           {/* Overlaid Image (revealed when slider moves right) */}
@@ -95,7 +95,7 @@ export function UnleashPowerSection() {
             { src: "/images/deliversPower/scoreboard.jpg", ratio: "aspect-square" },
             { src: "/images/deliversPower/aim.jpg", ratio: "aspect-[4/5]" },
           ].map((item, i) => (
-            <div key={i} className={`flex-1 ${item.ratio} bg-onx-near-black overflow-hidden relative parallax-card-${i}`}>
+            <div key={i} className={`flex-1 ${item.ratio} bg-onx-near-black overflow-hidden relative parallax-card-${i} ${i >= 3 ? "hidden md:block" : ""}`}>
               <img src={item.src} alt={`Detail ${i + 1}`} className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500 cursor-pointer" />
             </div>
           ))}

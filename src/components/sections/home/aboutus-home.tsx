@@ -14,7 +14,7 @@ export function AboutUsHomeSection() {
               About Us
             </span>
           </div>
-            <p className="text-[28px] sm:text-4xl md:text-xl font-normal leading-[1.2] text-onx-near-black tracking-tight">
+            <p className="text-xl sm:text-[28px] md:text-4xl font-normal leading-[1.2] text-onx-near-black tracking-tight">
               Quotes from our customer
             </p>
 

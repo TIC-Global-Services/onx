@@ -27,9 +27,9 @@ export function Footer() {
     <footer className="bg-onx-white p-2 sm:p-4 md:p-6">
       <div className="bg-onx-black rounded-[24px] md:rounded-[40px] pt-16 md:pt-24 px-8 md:px-16 overflow-hidden max-w-[1440px] mx-auto">
         {/* Columns */}
-        <div className="grid gap-12 md:grid-cols-12 mb-4 md:mb-8">
+        <div className="grid grid-cols-2 gap-12 md:grid-cols-12 mb-4 md:mb-8">
           {/* About column */}
-          <div className="md:col-span-4 lg:col-span-5 pr-0 md:pr-12">
+          <div className="col-span-2 md:col-span-4 lg:col-span-5 pr-0 md:pr-12">
             <h4 className="text-xl uppercase font-semibold tracking-wider text-onx-white">
               {footerAbout.title}
             </h4>
@@ -40,7 +40,7 @@ export function Footer() {
 
           {/* Link columns */}
           {footerColumns.map((column) => (
-            <div key={column.title} className="md:col-span-2">
+            <div key={column.title} className="col-span-1 md:col-span-2">
               <h4 className="text-xl uppercase font-semibold tracking-wider text-onx-white">
                 {column.title}
               </h4>
@@ -60,7 +60,7 @@ export function Footer() {
           ))}
 
           {/* Newsletter column */}
-          <div className="md:col-span-4 lg:col-span-3">
+          <div className="col-span-2 md:col-span-4 lg:col-span-3">
             <h4 className="text-xl uppercase font-semibold tracking-wider text-onx-white">
               {footerNewsletter.title}
             </h4>

@@ -1,6 +1,6 @@
 export function SteadyAimSection() {
   return (
-    <section id="steady-aim" className="relative bg-[#FA261A] py-24 md:py-48 overflow-hidden flex items-center min-h-[700px]">
+    <section id="steady-aim" className="relative bg-[#FA261A] pb-16 pt-24 md:py-48 overflow-hidden flex items-end md:items-center min-h-[700px]">
       
       {/* Right Target Graphic - Full Bleed */}
       <div className="absolute top-0 right-0 w-full md:w-1/2 h-full z-0">
@@ -15,7 +15,7 @@ export function SteadyAimSection() {
             <h3 className="block text-xl font-bold uppercase tracking-widest text-onx-black mb-4">
               Focus
             </h3>
-            <h2 className="text-[44px] sm:text-[56px] md:text-7xl lg:text-80px] font-bold uppercase leading-tight tracking-widest text-onx-black -ml-1">
+            <h2 className="text-[44px] sm:text-[56px] md:text-7xl lg:text-[80px] font-bold uppercase leading-tight tracking-widest text-onx-black -ml-1">
               STEADY AIM.
               <br />
               PERFECT HIT.

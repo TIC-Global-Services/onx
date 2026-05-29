@@ -57,7 +57,7 @@ export function StoryCardsSection() {
               </span>
             </div>
 
-            <h2 className={`relative z-10 text-6xl sm:text-9xl md:text-6xl lg:text-[140px] xl:text-[140px] font-bold uppercase leading-[1] tracking-tight ${card.textClass}`}>
+            <h2 className={`relative z-10 text-6xl sm:text-[80px] md:text-[100px] lg:text-[120px] xl:text-[140px] font-bold uppercase leading-[1] tracking-tight ${card.textClass}`}>
               {card.title}
             </h2>
 

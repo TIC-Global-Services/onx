@@ -27,6 +27,8 @@ const contentMap = {
     image: "/images/redbanners/headphones.png",
     imageClass: "w-full h-full object-cover z-10",
     objectPositionGrid: "25% 50%",
+    objectPositionExpandedMobile: "35% 50%",
+    objectPositionExpandedDesktop: "50% 50%",
     textFilled: "SILENCE THE",
     textOutlined: "NOISE.",
     textPosition: "bottom-12 right-12 md:bottom-24 md:right-24 items-end text-right",
@@ -36,6 +38,8 @@ const contentMap = {
     image: "/images/redbanners/archer.png",
     imageClass: "w-full h-full object-cover z-10",
     objectPositionGrid: "30% 20%",
+    objectPositionExpandedMobile: "30% 20%",
+    objectPositionExpandedDesktop: "50% 50%",
     textFilled: "HOLD. AIM",
     textOutlined: "BECOME.",
     textPosition: "top-1/2 -translate-y-1/2 left-12 md:left-24 items-start text-left",
@@ -45,6 +49,8 @@ const contentMap = {
     image: "/images/redbanners/darts.png",
     imageClass: "w-full h-full object-cover z-10",
     objectPositionGrid: "45% 50%",
+    objectPositionExpandedMobile: "50% 50%",
+    objectPositionExpandedDesktop: "50% 50%",
     textFilled: "ONE TARGET. NO",
     textOutlined: "DOUBT.",
     textPosition: "bottom-12 left-1/2 -translate-x-1/2 items-center text-center w-full",
@@ -54,6 +60,8 @@ const contentMap = {
     image: "/images/redbanners/redrevolver.png",
     imageClass: "w-full h-full object-cover z-10",
     objectPositionGrid: "60% 50%",
+    objectPositionExpandedMobile: "55% 50%",
+    objectPositionExpandedDesktop: "50% 50%",
     textFilled: "MEASURED. RESULT.",
     textOutlined: "PRECISE.",
     textPosition: "bottom-12 left-12 md:bottom-24 md:left-24 items-start text-left",
@@ -132,9 +140,12 @@ export function StripeExpansionModal({ selectedId, exactState, onClose }: Stripe
       ease: "power3.inOut"
     });
 
-    // Animate object position to center, and apply cinematic blur
+    // Animate object position to center (or mobile offset), and apply cinematic blur
+    const isMobile = window.innerWidth < 768;
+    const targetObjPos = isMobile ? data.objectPositionExpandedMobile : data.objectPositionExpandedDesktop;
+
     gsap.to(imageRef.current, {
-      objectPosition: "50% 50%",
+      objectPosition: targetObjPos,
       duration: 0.8,
       ease: "power3.inOut"
     });

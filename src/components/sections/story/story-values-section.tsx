@@ -25,7 +25,7 @@ export function StoryValuesSection() {
       {/* Marquee Heading */}
       <div className="w-full overflow-hidden whitespace-nowrap mb-4 md:mb-4 flex relative">
         <div className="animate-marquee-slow inline-flex whitespace-nowrap">
-          <h2 className="text-9xl sm:text-[45px] md:text-6xl lg:text-[90px] font-normal uppercase leading-tight tracking-tight pr-12">
+          <h2 className="text-[45px] sm:text-6xl md:text-[80px] lg:text-[90px] font-normal uppercase leading-tight tracking-tight pr-12">
             PURPOSE, DRIVEN BY PASSION, DEFINED BY TIME. PURPOSE, DRIVEN BY PASSION, DEFINED BY TIME.
           </h2>
           

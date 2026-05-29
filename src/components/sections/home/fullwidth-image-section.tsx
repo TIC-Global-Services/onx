@@ -31,7 +31,7 @@ export function FullwidthImageSection({
       )}
     >
       <div
-        className="w-full flex items-center justify-center"
+        className="w-full flex items-center justify-center min-h-[100vh] md:min-h-0"
         style={{ aspectRatio }}
       >
         {src ? (
