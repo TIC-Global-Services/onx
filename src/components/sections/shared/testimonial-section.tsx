@@ -50,11 +50,11 @@ export function TestimonialSection({ testimonial }: TestimonialSectionProps) {
         {/* Right: Product Card */}
         <div className="bg-onx-warm-light flex flex-col items-center justify-center p-10 md:p-16 lg:p-24 text-center border-l border-onx-border-light">
           <div className="w-full text-left mb-auto">
-            <span className="text-[10px] uppercase font-bold tracking-widest text-onx-black">Assault Rifle</span>
+            <span className="text-xs uppercase font-bold tracking-widest text-onx-black">Assault Rifle</span>
           </div>
           
           <div className="w-[90%] aspect-[2/1] bg-onx-near-black/5 flex items-center justify-center mb-auto mt-12">
-            <span className="text-[10px] uppercase tracking-[0.2em] text-black/20">Product Image</span>
+            <span className="text-xs uppercase tracking-[0.2em] text-black/20">Product Image</span>
           </div>
 
           <button className="bg-onx-white px-8 py-3 text-xs uppercase font-bold tracking-widest border border-onx-border-light hover:bg-onx-near-black hover:text-white transition-colors mt-12">

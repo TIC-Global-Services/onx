@@ -16,11 +16,11 @@ export function ProductsCardsSection() {
           {/* Card 2: Handgun card */}
           <div className="min-w-[85vw] md:min-w-0 snap-center aspect-[4/6] bg-onx-warm-light flex flex-col items-center justify-between p-8 text-center relative group">
             <div className="w-full text-left">
-              <span className="text-[10px] uppercase font-bold tracking-widest text-onx-red">01</span>
+              <span className="text-xs uppercase font-bold tracking-widest text-onx-red">01</span>
             </div>
             <div className="flex-1 w-full flex items-center justify-center">
               <div className="w-[80%] aspect-video bg-onx-near-black/5">
-                <span className="text-[10px] uppercase tracking-[0.2em] text-black/20 w-full h-full flex items-center justify-center">Handgun</span>
+                <span className="text-xs uppercase tracking-[0.2em] text-black/20 w-full h-full flex items-center justify-center">Handgun</span>
               </div>
             </div>
             <button className="bg-onx-white px-8 py-3 text-xs uppercase font-bold tracking-widest border border-onx-border-light hover:bg-onx-near-black hover:text-white transition-colors">
@@ -31,11 +31,11 @@ export function ProductsCardsSection() {
           {/* Card 3: Rifle card */}
           <div className="min-w-[85vw] md:min-w-0 snap-center aspect-[4/6] bg-onx-warm-light flex flex-col items-center justify-between p-8 text-center relative group">
             <div className="w-full text-left">
-              <span className="text-[10px] uppercase font-bold tracking-widest text-onx-red">02</span>
+              <span className="text-xs uppercase font-bold tracking-widest text-onx-red">02</span>
             </div>
             <div className="flex-1 w-full flex items-center justify-center">
               <div className="w-[90%] aspect-[2/1] bg-onx-near-black/5">
-                <span className="text-[10px] uppercase tracking-[0.2em] text-black/20 w-full h-full flex items-center justify-center">Rifle</span>
+                <span className="text-xs uppercase tracking-[0.2em] text-black/20 w-full h-full flex items-center justify-center">Rifle</span>
               </div>
             </div>
             <button className="bg-onx-white px-8 py-3 text-xs uppercase font-bold tracking-widest border border-onx-border-light hover:bg-onx-near-black hover:text-white transition-colors">

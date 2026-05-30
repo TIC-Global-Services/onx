@@ -24,10 +24,10 @@ export function ArenaSplitSection() {
           {/* Card 1 */}
           <div className="min-w-[85vw] md:min-w-full snap-center flex flex-col items-center justify-center text-center p-10 md:p-0 flex-shrink-0">
             <div className="w-full text-left mb-auto">
-              <span className="text-[10px] uppercase font-bold tracking-widest text-onx-black">Handgun</span>
+              <span className="text-xs uppercase font-bold tracking-widest text-onx-black">Handgun</span>
             </div>
             <div className="w-[80%] md:w-[90%] lg:w-[80%] aspect-video bg-onx-near-black/5 flex items-center justify-center mb-auto mt-12 md:mt-24">
-              <span className="text-[10px] uppercase tracking-[0.2em] text-black/20">Product Image</span>
+              <span className="text-xs uppercase tracking-[0.2em] text-black/20">Product Image</span>
             </div>
             <button className="bg-onx-white px-8 py-3 text-xs uppercase font-bold tracking-widest border border-onx-border-light hover:bg-onx-near-black hover:text-white transition-colors mt-12 md:mt-24">
               Add To Cart
@@ -37,10 +37,10 @@ export function ArenaSplitSection() {
           {/* Card 2 */}
           <div className="min-w-[85vw] md:min-w-full snap-center flex flex-col items-center justify-center text-center p-10 md:p-0 flex-shrink-0">
             <div className="w-full text-left mb-auto">
-              <span className="text-[10px] uppercase font-bold tracking-widest text-onx-black">Rifle</span>
+              <span className="text-xs uppercase font-bold tracking-widest text-onx-black">Rifle</span>
             </div>
             <div className="w-[80%] md:w-[90%] lg:w-[80%] aspect-video bg-onx-near-black/5 flex items-center justify-center mb-auto mt-12 md:mt-24">
-              <span className="text-[10px] uppercase tracking-[0.2em] text-black/20">Product Image</span>
+              <span className="text-xs uppercase tracking-[0.2em] text-black/20">Product Image</span>
             </div>
             <button className="bg-onx-white px-8 py-3 text-xs uppercase font-bold tracking-widest border border-onx-border-light hover:bg-onx-near-black hover:text-white transition-colors mt-12 md:mt-24">
               Add To Cart

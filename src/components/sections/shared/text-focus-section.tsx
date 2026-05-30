@@ -8,7 +8,7 @@ export function TextFocusSection() {
           
           <div className="flex items-center gap-2 mb-8">
             <div className="w-2 h-2 bg-onx-near-black"></div>
-            <span className="text-[10px] md:text-xs font-normal uppercase tracking-widest text-onx-near-black">
+            <span className="text-xs md:text-xs font-normal uppercase tracking-widest text-onx-near-black">
               BUILT FOR STABILITY, CONTROL, AND ABSOLUTE ACCURACY WHEN IT MATTERS MOST.
             </span>
           </div>

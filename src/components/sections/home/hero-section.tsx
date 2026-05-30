@@ -155,7 +155,7 @@ export function HeroSection() {
 
       {hoveredStripe && (
         <div 
-          className="fixed pointer-events-none z-[100] bg-onx-black text-white text-[10px] uppercase font-bold tracking-[0.2em] px-4 py-2 rounded-full shadow-lg whitespace-nowrap"
+          className="fixed pointer-events-none z-[100] bg-onx-black text-white text-xs uppercase font-bold tracking-[0.2em] px-4 py-2 rounded-full shadow-lg whitespace-nowrap"
           style={{ left: cursorPos.x, top: cursorPos.y, transform: "translate(-50%, -50%)" }}
         >
           VIEW MORE

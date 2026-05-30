@@ -40,7 +40,7 @@ export function FullwidthImageSection({
         ) : (
           <span
             className={clsx(
-              "text-[10px] uppercase tracking-[0.25em]",
+              "text-xs uppercase tracking-[0.25em]",
               dark ? "text-white/12" : "text-onx-near-black/12",
             )}
           >
