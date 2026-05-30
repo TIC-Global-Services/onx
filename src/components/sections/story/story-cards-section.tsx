@@ -3,7 +3,7 @@ import Link from "next/link";
 const cards = [
   {
     id: "burn",
-    text:"A word from the founder",
+    text: "A word from the founder",
     title: "BURN",
     action: "EXPLORE",
     image: "/images/story/story-burn.png",
@@ -41,23 +41,23 @@ export function StoryCardsSection() {
       <div className="w-full flex flex-col md:flex-row h-auto md:h-[600px] lg:h-[800px]">
         {cards.map((card) => (
           <div key={card.id} className={`w-full md:w-1/3 h-[500px] sm:h-[500px] md:h-full relative flex flex-col items-center justify-between p-12 lg:p-16 overflow-hidden group ${card.bgClass}`}>
-            
+
             {card.image && (
-              <img 
-                src={card.image} 
-                alt={card.title} 
-                className="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-overlay group-hover:scale-105 transition-transform duration-700 z-0" 
+              <img
+                src={card.image}
+                alt={card.title}
+                className="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-overlay group-hover:scale-105 transition-transform duration-700 z-0"
               />
             )}
-            
+
             <div className="relative z-10 flex items-center gap-2">
               <div className={`w-2 h-2 ${card.squareClass}`}></div>
-              <span className={`text-xs uppercase tracking-tight font-normal ${card.textClass}`}>
+              <span className={`text-xs uppercase tracking-widest font-normal ${card.textClass}`}>
                 {card.text}
               </span>
             </div>
 
-            <h2 className={`relative z-10 text-6xl sm:text-[80px] md:text-[100px] lg:text-[120px] xl:text-[140px] font-bold uppercase leading-[1] tracking-tight ${card.textClass}`}>
+            <h2 className={`relative z-10 text-6xl font-normal uppercase leading-[1] tracking-tight ${card.textClass}`}>
               {card.title}
             </h2>
 

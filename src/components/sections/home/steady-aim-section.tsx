@@ -11,7 +11,7 @@ export function SteadyAimSection() {
         <div className="grid md:grid-cols-2 gap-10 md:gap-20 items-center">
           
           {/* Left Text content */}
-          <div className="mt-12 md:mt-32">
+          <div className="relative md:translate-y-24 mt-12 md:mt-32">
             <h3 className="block text-xl font-bold uppercase tracking-widest text-onx-black mb-4">
               Focus
             </h3>

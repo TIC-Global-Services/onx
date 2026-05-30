@@ -23,13 +23,17 @@ const shippingFaqs: FaqItem[] = [
   { question: "WHAT IF I MISS MY DELIVERY?", answer: "Our delivery partners will attempt delivery up to three times before returning the package to us." },
 ];
 
-function AccordionItem({ item }: { item: FaqItem }) {
-  const [isOpen, setIsOpen] = useState(false);
+interface AccordionItemProps {
+  item: FaqItem;
+  isOpen: boolean;
+  onToggle: () => void;
+}
 
+function AccordionItem({ item, isOpen, onToggle }: AccordionItemProps) {
   return (
     <div className="border-b border-onx-near-black/20">
       <button 
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={onToggle}
         className="w-full py-6 flex items-center justify-between text-left group outline-none"
       >
         <span className="text-xs md:text-sm font-bold uppercase tracking-wider text-onx-near-black group-hover:text-onx-red transition-colors">
@@ -52,6 +56,9 @@ function AccordionItem({ item }: { item: FaqItem }) {
 }
 
 export function FaqContentSection() {
+  const [openOrderIndex, setOpenOrderIndex] = useState<number | null>(null);
+  const [openShippingIndex, setOpenShippingIndex] = useState<number | null>(null);
+
   return (
     <section className="bg-onx-white py-24 md:py-32">
       <div className="max-w-[1440px] mx-auto px-5 md:px-10">
@@ -93,7 +100,12 @@ export function FaqContentSection() {
             </div>
             <div className="flex flex-col border-t border-onx-near-black/20">
               {orderFaqs.map((faq, index) => (
-                <AccordionItem key={`order-${index}`} item={faq} />
+                <AccordionItem 
+                  key={`order-${index}`} 
+                  item={faq} 
+                  isOpen={openOrderIndex === index}
+                  onToggle={() => setOpenOrderIndex(openOrderIndex === index ? null : index)}
+                />
               ))}
             </div>
           </div>
@@ -108,7 +120,12 @@ export function FaqContentSection() {
             </div>
             <div className="flex flex-col border-t border-onx-near-black/20">
               {shippingFaqs.map((faq, index) => (
-                <AccordionItem key={`shipping-${index}`} item={faq} />
+                <AccordionItem 
+                  key={`shipping-${index}`} 
+                  item={faq} 
+                  isOpen={openShippingIndex === index}
+                  onToggle={() => setOpenShippingIndex(openShippingIndex === index ? null : index)}
+                />
               ))}
             </div>
           </div>

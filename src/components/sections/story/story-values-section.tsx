@@ -21,17 +21,18 @@ export function StoryValuesSection() {
   const data = tabData[activeTab];
 
   return (
-    <section className="bg-onx-black text-onx-white overflow-hidden pt-4 pb-24 md:pt-4 md:pb-8 relative">
+    <section className="bg-onx-black text-onx-white overflow-hidden pt-4 pb-16 md:pt-4 md:pb-8 relative">
       {/* Marquee Heading */}
       <div className="w-full overflow-hidden whitespace-nowrap mb-4 md:mb-4 flex relative">
         <div className="animate-marquee-slow inline-flex whitespace-nowrap">
           <h2 className="text-[45px] sm:text-6xl md:text-[80px] lg:text-[90px] font-normal uppercase leading-tight tracking-tight pr-12">
             PURPOSE, DRIVEN BY PASSION, DEFINED BY TIME. PURPOSE, DRIVEN BY PASSION, DEFINED BY TIME.
           </h2>
-          
+
         </div>
       </div>
-      <style dangerouslySetInnerHTML={{__html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         @keyframes marquee-slow {
           0% { transform: translateX(0%); }
           100% { transform: translateX(-50%); }
@@ -41,28 +42,28 @@ export function StoryValuesSection() {
         }
       `}} />
 
-      <div className="max-w-[1440px] mx-auto px-5 md:px-10 flex flex-col relative z-10">
-        
+      <div className="max-w-[1440px] mx-auto px-5 md:px-10 flex flex-col relative z-10 pt-8 md:pt-12">
+
         {/* Tabs */}
         <div className="flex items-center gap-6 mb-16 md:mb-32">
-          <button 
+          <button
             onClick={() => setActiveTab("driven")}
-            className={`text-xs md:text-sm font-bold tracking-[0.2em] uppercase transition-colors ${activeTab === "driven" ? "text-onx-white" : "text-onx-white/40 hover:text-onx-white/80"}`}
+            className={`cursor-pointer text-xs md:text-sm font-bold tracking-[0.2em] uppercase transition-colors ${activeTab === "driven" ? "text-onx-white" : "text-onx-white/40 hover:text-onx-white/80"}`}
           >
             DRIVEN
           </button>
-          <button 
+          <button
             onClick={() => setActiveTab("precise")}
-            className={`text-xs md:text-sm font-bold tracking-[0.2em] uppercase transition-colors ${activeTab === "precise" ? "text-onx-white" : "text-onx-white/40 hover:text-onx-white/80"}`}
+            className={`cursor-pointer text-xs md:text-sm font-bold tracking-[0.2em] uppercase transition-colors ${activeTab === "precise" ? "text-onx-white" : "text-onx-white/40 hover:text-onx-white/80"}`}
           >
             PRECISE.
           </button>
         </div>
 
         <div className="flex flex-col md:flex-row justify-between gap-16 md:gap-8">
-          
+
           {/* Left Column: Text */}
-          <div className="flex flex-col justify-start max-w-[500px] w-full md:w-1/2 pt-0 md:pt-48">
+          <div className="flex flex-col justify-start max-w-[500px] w-full md:w-1/2 pt-0 md:pt-36">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeTab}
@@ -84,15 +85,15 @@ export function StoryValuesSection() {
           {/* Right Column: Image */}
           <div className="w-full md:w-[45%] lg:w-[45%] ml-auto aspect-[4/5] bg-transparent relative overflow-hidden flex-shrink-0 -mt-8 md:-mt-42">
             <AnimatePresence>
-              <motion.img 
+              <motion.img
                 key={activeTab}
-                src={data.image} 
-                alt={data.title} 
+                src={data.image}
+                alt={data.title}
                 initial={{ opacity: 0, scale: 1.05 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 1.05 }}
                 transition={{ duration: 0.4, ease: "easeInOut" }}
-                className="absolute inset-0 w-full h-full object-cover object-center" 
+                className="absolute inset-0 w-full h-full object-cover object-center"
               />
             </AnimatePresence>
           </div>

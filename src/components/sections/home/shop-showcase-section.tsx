@@ -13,23 +13,23 @@ export function ShopShowcaseSection() {
   const imageRef = useRef<HTMLImageElement>(null);
   
   useGSAP(() => {
-    // Reveal the image with a subtle slide and fade when it enters the viewport
+    // Reveal the image with a cinematic glow and silhouette focus reveal
     gsap.fromTo(imageRef.current,
       { 
-        y: 60, 
-        opacity: 0,
-        scale: 0.95
+        filter: "blur(20px) brightness(3)", 
+        scale: 0.9, 
+        opacity: 0 
       },
       {
-        y: 0,
-        opacity: 1,
-        scale: 1,
-        duration: 1.2,
-        ease: "power3.out",
+        filter: "blur(0px) brightness(1)", 
+        scale: 1, 
+        opacity: 1, 
+        duration: 1.8, 
+        ease: "power3.out", 
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 70%", // Trigger when top of section is 70% down the viewport
-          toggleActions: "play none none reverse" // Play on enter, reverse on leave back
+          start: "top 65%",
+          toggleActions: "play none none reverse"
         }
       }
     );
@@ -39,11 +39,24 @@ export function ShopShowcaseSection() {
     <section ref={sectionRef} id="shop-showcase" className="min-h-screen flex flex-col justify-center bg-onx-white pt-16 md:pt-24 pb-8 md:pb-12 overflow-hidden">
       
       {/* Massive horizontal typography band spanning full width */}
-      <div className="w-full mb-24 md:mb-32 flex justify-center whitespace-nowrap">
-        <span className="text-[64px] sm:text-8xl md:text-[140px] font-bold uppercase leading-[0.8] tracking-normal text-transparent" style={{ WebkitTextStroke: "1px #000000" }}>
-          SHOP ITEMS <span className="text-onx-red" style={{ WebkitTextStroke: "0" }}>SHOP</span> ITEMS ITEMS SHOP
-        </span>
+      <div className="w-full mb-24 md:mb-32 flex whitespace-nowrap">
+        <div className="animate-marquee inline-flex whitespace-nowrap">
+          {[1, 2, 3, 4].map((i) => (
+            <span key={i} className="pr-12 text-[64px] sm:text-8xl md:text-[140px] font-bold uppercase leading-[0.8] tracking-normal text-transparent" style={{ WebkitTextStroke: "1px #000000" }}>
+              <span className="text-onx-red" style={{ WebkitTextStroke: "0" }}>SHOP</span> ITEMS <span className="text-onx-red" style={{ WebkitTextStroke: "0" }}>SHOP</span> ITEMS
+            </span>
+          ))}
+        </div>
       </div>
+      <style dangerouslySetInnerHTML={{__html: `
+        @keyframes marquee {
+          0% { transform: translateX(0%); }
+          100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+          animation: marquee 15s linear infinite;
+        }
+      `}} />
 
       <div className="max-w-[1440px] mx-auto px-5 md:px-10">
 

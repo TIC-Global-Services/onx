@@ -6,21 +6,22 @@ export function ContactMarqueeSection() {
             Using two identical text blocks that animate left infinitely.
         */}
         <div className="animate-marquee inline-flex whitespace-nowrap">
-          <span className="text-[32px] md:text-5xl lg:text-[64px] uppercase font-bold text-onx-white tracking-wider px-8">
+          <span className="text-[32px] md:text-5xl lg:text-[64px] uppercase font-normal text-onx-white tracking-wider px-8">
             FOLLOW US FOR MORE @ON_X_TARGET_SPORTZ
           </span>
-          <span className="text-[32px] md:text-5xl lg:text-[64px] uppercase font-bold text-onx-white tracking-wider px-8">
+          <span className="text-[32px] md:text-5xl lg:text-[64px] uppercase font-normal text-onx-white tracking-wider px-8">
             FOLLOW US FOR MORE @ON_X_TARGET_SPORTZ
           </span>
-          <span className="text-[32px] md:text-5xl lg:text-[64px] uppercase font-bold text-onx-white tracking-wider px-8">
+          <span className="text-[32px] md:text-5xl lg:text-[64px] uppercase font-normal text-onx-white tracking-wider px-8">
             FOLLOW US FOR MORE @ON_X_TARGET_SPORTZ
           </span>
-          <span className="text-[32px] md:text-5xl lg:text-[64px] uppercase font-bold text-onx-white tracking-wider px-8">
+          <span className="text-[32px] md:text-5xl lg:text-[64px] uppercase font-normal text-onx-white tracking-wider px-8">
             FOLLOW US FOR MORE @ON_X_TARGET_SPORTZ
           </span>
         </div>
       </div>
-      <style dangerouslySetInnerHTML={{__html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         @keyframes marquee {
           0% { transform: translateX(0%); }
           100% { transform: translateX(-50%); }
