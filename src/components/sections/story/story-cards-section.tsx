@@ -40,7 +40,7 @@ export function StoryCardsSection() {
     <section className="bg-onx-white w-full">
       <div className="w-full flex flex-col md:flex-row h-auto md:h-[600px] lg:h-[800px]">
         {cards.map((card) => (
-          <div key={card.id} className={`w-full md:w-1/3 h-[400px] sm:h-[500px] md:h-full relative flex flex-col items-center justify-between p-12 lg:p-16 overflow-hidden group ${card.bgClass}`}>
+          <div key={card.id} className={`w-full md:w-1/3 h-[500px] sm:h-[500px] md:h-full relative flex flex-col items-center justify-between p-12 lg:p-16 overflow-hidden group ${card.bgClass}`}>
             
             {card.image && (
               <img 
@@ -52,7 +52,7 @@ export function StoryCardsSection() {
             
             <div className="relative z-10 flex items-center gap-2">
               <div className={`w-2 h-2 ${card.squareClass}`}></div>
-              <span className={`text-[10px] md:text-xs uppercase tracking-tight font-normal ${card.textClass}`}>
+              <span className={`text-xs uppercase tracking-tight font-normal ${card.textClass}`}>
                 {card.text}
               </span>
             </div>

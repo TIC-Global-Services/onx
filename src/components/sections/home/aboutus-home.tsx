@@ -4,7 +4,7 @@ import { TextReveal } from "@/components/ui/text-reveal";
 
 export function AboutUsHomeSection() {
   return (
-    <section id="about-us" className="bg-onx-white py-24 md:py-32">
+    <section id="about-us" className="min-h-screen flex flex-col justify-center bg-onx-white py-24 md:py-32">
       <Container>
         <div className="mx-auto max-w-[500px] text-center">
 

@@ -60,7 +60,7 @@ export function FaqContentSection() {
         <div className="flex flex-col items-center text-center max-w-full mx-auto mb-24 md:mb-32">
           <div className="flex items-center gap-2 mb-8">
             <div className="w-2 h-2 bg-onx-near-black"></div>
-            <span className="text-[10px] md:text-xs uppercase font-normal tracking-tight text-onx-near-black">
+            <span className="text-xs uppercase font-normal tracking-tight text-onx-near-black">
               ABOUT THIS COLLECTION
             </span>
           </div>

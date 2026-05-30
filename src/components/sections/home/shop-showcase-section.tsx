@@ -36,7 +36,7 @@ export function ShopShowcaseSection() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} id="shop-showcase" className="bg-onx-white pt-16 md:pt-24 pb-8 md:pb-12 overflow-hidden">
+    <section ref={sectionRef} id="shop-showcase" className="min-h-screen flex flex-col justify-center bg-onx-white pt-16 md:pt-24 pb-8 md:pb-12 overflow-hidden">
       
       {/* Massive horizontal typography band spanning full width */}
       <div className="w-full mb-24 md:mb-32 flex justify-center whitespace-nowrap">
