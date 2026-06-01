@@ -11,10 +11,11 @@ if (typeof window !== "undefined") {
 
 interface TextRevealProps {
   text: string;
+  secondaryText?: string;
   className?: string;
 }
 
-export function TextReveal({ text, className = "" }: TextRevealProps) {
+export function TextReveal({ text, secondaryText, className = "" }: TextRevealProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLParagraphElement>(null);
 
@@ -44,6 +45,7 @@ export function TextReveal({ text, className = "" }: TextRevealProps) {
   }, { scope: containerRef });
 
   const words = text.split(/(\s+)/); // Preserve spaces
+  const secondaryWords = secondaryText?.split(/(\s+)/);
 
   return (
     <div ref={containerRef} className="w-full flex justify-center">
@@ -61,6 +63,23 @@ export function TextReveal({ text, className = "" }: TextRevealProps) {
             </span>
           );
         })}
+        {secondaryWords && (
+          <span className="hidden md:inline">
+            {secondaryWords.map((word, i) => {
+              if (word.trim() === "") {
+                return <span key={`s-${i}`}>{word}</span>;
+              }
+              return (
+                <span
+                  key={`s-${i}`}
+                  className="word-span text-onx-near-black/10 inline-block"
+                >
+                  {word}
+                </span>
+              );
+            })}
+          </span>
+        )}
       </p>
     </div>
   );
