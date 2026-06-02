@@ -65,7 +65,7 @@ export function ShopShowcaseSection() {
           <p className="text-xl text-xl text-onx-near-black font-medium leading-wide mb-20">Precision Performance</p>
           <TextReveal 
             text="ONX Sports is built for those who thrive on precision, discipline, and performance. Designed as a space where focus meets action, it brings together modern training environments with a strong foundation in skill-based sports like shooting and archery."
-            className="text-3xl text-3xl font-medium leading-tight text-onx-near-black" 
+            className="text-3xl text-3xl font-thin md:font-normal leading-tight text-onx-near-black" 
           />
         </div>
 

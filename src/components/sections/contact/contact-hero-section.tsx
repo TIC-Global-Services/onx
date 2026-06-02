@@ -1,6 +1,6 @@
 export function ContactHeroSection() {
   return (
-    <section className="w-full h-[60vh] min-h-[500px] relative overflow-hidden flex items-center justify-center p-8 md:p-16 lg:p-24 group">
+    <section className="w-full aspect-[3/2] md:h-[60vh] md:min-h-[500px] relative overflow-hidden flex items-center justify-center p-8 md:p-16 lg:p-24 group">
       <div className="absolute inset-0 bg-black/50 z-10" />
       <img 
         src="/images/contact/contact-hero.png" 

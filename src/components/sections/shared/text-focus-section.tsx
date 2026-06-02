@@ -17,7 +17,7 @@ export function TextFocusSection() {
             OWN THE TARGET CONTROL EVERY SHOT
           </h2>
 
-          <p className="text-xs md:text-xs font-normal uppercase tracking-normal text-onx-black leading-wide max-w-[650px] font-montserrat">
+          <p className="text-xs md:text-xs font-normal uppercase tracking-wide text-onx-black leading-wide max-w-[650px]">
             BUILT FOR THOSE WHO DEMAND ABSOLUTE CONTROL, RIFLE SHOOTING AT ONX IS WHERE FOCUS MEETS PRECISION—EVERY BREATH MEASURED, EVERY MOVEMENT STEADY, AND EVERY SHOT DELIVERED WITH INTENT. IT'S NOT JUST ABOUT HITTING THE TARGET, IT'S ABOUT MASTERING THE MOMENT AND OWNING EVERY SINGLE SHOT.
           </p>
 

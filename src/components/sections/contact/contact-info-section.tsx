@@ -7,7 +7,7 @@ export function ContactInfoSection() {
 
         {/* Left Column */}
         <div className="w-full lg:w-1/4">
-          <p className="text-base md:text-xl leading-[1.6] text-onx-near-black">
+          <p className="text-base md:text-xl leading-[1.6] text-onx-near-black max-w-[250px]">
             For bookings, enquiries, or just to take your first shot get in touch with ONX.
           </p>
         </div>

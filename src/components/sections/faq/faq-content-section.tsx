@@ -36,18 +36,18 @@ function AccordionItem({ item, isOpen, onToggle }: AccordionItemProps) {
         onClick={onToggle}
         className="w-full py-6 flex items-center justify-between text-left group outline-none"
       >
-        <span className="text-xs md:text-sm font-bold uppercase tracking-wider text-onx-near-black group-hover:text-onx-red transition-colors">
+        <span className="text-[18px] md:text-[24px] font-normal uppercase tracking-wider text-onx-near-black group-hover:text-onx-red transition-colors">
           {item.question}
         </span>
         <ChevronDown 
-          size={16} 
+          size={20} 
           className={`text-onx-near-black transition-transform duration-300 flex-shrink-0 ml-4 ${isOpen ? 'rotate-180' : 'rotate-0'}`} 
         />
       </button>
       <div 
         className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[200px] pb-6 opacity-100' : 'max-h-0 opacity-0'}`}
       >
-        <p className="text-[13px] md:text-sm text-onx-near-black/70 leading-[1.6]">
+        <p className="text-[16px] md:text-[18px] text-onx-near-black/70 leading-[1.6]">
           {item.answer}
         </p>
       </div>

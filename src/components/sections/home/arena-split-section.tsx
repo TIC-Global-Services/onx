@@ -8,7 +8,7 @@ export function ArenaSplitSection() {
       <div className="grid grid-cols-1 md:grid-cols-2 min-h-[600px] lg:min-h-[800px]">
 
         {/* Left: Arena Image & Overlay */}
-        <div className="relative bg-onx-near-black flex flex-col justify-end p-10 md:p-16 lg:p-24 overflow-hidden grayscale min-h-[60vh] md:min-h-0">
+        <div className="relative bg-onx-near-black flex flex-col justify-end p-10 pb-32 md:p-16 lg:p-24 overflow-hidden grayscale min-h-[100vh] md:min-h-0">
           <img src="/images/drawnfocus.png" alt="ONX Arena" className="absolute inset-0 w-full h-full object-cover z-0" />
           <div className="absolute inset-0 bg-black/20 z-0 pointer-events-none"></div>
 

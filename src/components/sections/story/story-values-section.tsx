@@ -75,7 +75,7 @@ export function StoryValuesSection() {
                 <h3 className="text-[40px] sm:text-5xl md:text-[56px] font-normal uppercase tracking-wider mb-6">
                   {data.title}
                 </h3>
-                <p className="text-[13px] md:text-sm text-onx-white/80 leading-[1.6] uppercase tracking-wider">
+                <p className="text-md text-onx-white/80 leading-[1.6] uppercase tracking-wider">
                   {data.text}
                 </p>
               </motion.div>
