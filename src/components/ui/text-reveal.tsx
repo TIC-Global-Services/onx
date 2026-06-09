@@ -13,9 +13,10 @@ interface TextRevealProps {
   text: string;
   secondaryText?: string;
   className?: string;
+  pin?: boolean;
 }
 
-export function TextReveal({ text, secondaryText, className = "" }: TextRevealProps) {
+export function TextReveal({ text, secondaryText, className = "", pin = true }: TextRevealProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLParagraphElement>(null);
 
@@ -34,7 +35,7 @@ export function TextReveal({ text, secondaryText, className = "" }: TextRevealPr
         ease: "none",
         scrollTrigger: {
           trigger: containerRef.current,
-          pin: containerRef.current?.closest("section") || true,
+          pin: pin ? (containerRef.current?.closest("section") || true) : false,
           start: "center center",
           end: isDesktop ? "+=150%" : "+=100%",
           scrub: 0.7,

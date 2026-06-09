@@ -23,7 +23,7 @@ export function Header({ dark = false, absolute = false }: HeaderProps) {
         {/* Center: ONX Logo */}
         <div className="flex-1 flex justify-center">
           <Link href="/" className="flex items-center">
-            <img src="/images/arc&bore-header.png" alt="ONX Logo" className="h-16 md:h-24 w-auto object-contain translate-y-1" />
+            <img src="/images/arc&bore-header.png" alt="ONX Logo" className="h-20 md:h-28 w-auto object-contain translate-y-1" />
           </Link>
         </div>
 

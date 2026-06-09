@@ -80,7 +80,7 @@ export function HeroSection() {
                 className="w-full h-full bg-onx-red overflow-hidden relative cursor-pointer"
               >
                 <div className="absolute top-0 left-1/2 w-[250%] h-full -translate-x-1/2 bg-onx-red flex items-center justify-center skew-x-[12deg]">
-                  <img src="/images/redbanners/headphones.png" alt="Headphones" className="w-full h-full object-cover object-[25%_50%]" />
+                  <img src="/images/redbanners/headphones2.png" alt="Headphones" className="w-full h-full object-cover object-[30%_50%] scale-120 " />
                 </div>
               </motion.div>
             </motion.div>
