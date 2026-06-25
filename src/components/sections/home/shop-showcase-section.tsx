@@ -86,7 +86,7 @@ export function ShopShowcaseSection() {
         <div className="mx-auto max-w-[900px] text-center">
           <p className="text-xl text-xl text-onx-near-black font-medium leading-wide mb-8">Precision Performance</p>
           <TextReveal
-            text="ONX Sports is built for those who thrive on precision, discipline, and performance. Designed as a space where focus meets action, it brings together modern training environments with a strong foundation in skill-based sports like shooting and archery."
+            text="We are built for those who thrive on precision, discipline, and performance. Designed as a space where focus meets action, it brings together modern training environments with a strong foundation in skill-based sports like shooting and archery."
             className="text-3xl text-3xl font-thin md:font-normal leading-tight text-onx-near-black"
             pin={false}
           />
@@ -97,7 +97,7 @@ export function ShopShowcaseSection() {
           <img
             ref={imageRef}
             src="/images/shotgun.png"
-            alt="ONX Shotgun"
+            alt="Shotgun"
             className="w-[600px] h-auto object-contain"
           />
         </div>

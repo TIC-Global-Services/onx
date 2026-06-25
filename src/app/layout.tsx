@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Antonio } from "next/font/google";
 import "./globals.css";
+import { ProgressiveBlur } from "@/components/ui/progressive-blur";
+import { CustomCursor } from "@/components/ui/custom-cursor";
 
 const antonio = Antonio({
   subsets: ["latin"],
@@ -10,9 +12,9 @@ const antonio = Antonio({
 });
 
 export const metadata: Metadata = {
-  title: "ONX Sports — Built to Decide",
+  title: "Arc & Bore — Built to Decide",
   description:
-    "ONX Sports is a precision-focused indoor training space built for those who value control, discipline, and performance.",
+    "We are a precision-focused indoor training space built for those who value control, discipline, and performance.",
 };
 
 export default function RootLayout({
@@ -24,6 +26,8 @@ export default function RootLayout({
     <html lang="en" className={`${antonio.variable} bg-onx-black`}>
       <body className="font-antonio text-onx-white antialiased">
         {children}
+        <ProgressiveBlur />
+        <CustomCursor />
       </body>
     </html>
   );

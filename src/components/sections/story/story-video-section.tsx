@@ -6,7 +6,7 @@ export function StoryVideoSection() {
         {/* Left: Text */}
         <div className="max-w-[300px] md:max-w-[600px] w-full md:w-1/2">
           <h3 className="text-xl sm:text-[28px] md:text-[32px] lg:text-[40px] font-normal uppercase leading-[1.1] tracking-[-0.01em] text-onx-near-black text-center md:text-left">
-            ONX SPORTS IS BUILT FOR PRECISION, FOCUS, AND CONTROL. A MODERN SPACE FOR SHOOTING, DARTS, AND ARCHERY WHERE SKILL MEETS DISCIPLINE AND PERFECTION TAKES FOCUS.
+            OUR SPACE IS BUILT FOR PRECISION, FOCUS, AND CONTROL. A MODERN AREA FOR SHOOTING, DARTS, AND ARCHERY WHERE SKILL MEETS DISCIPLINE AND PERFECTION TAKES FOCUS.
           </h3>
         </div>
 

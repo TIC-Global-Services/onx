@@ -104,12 +104,12 @@ export function UnleashPowerSection() {
         {/* Huge Typography */}
         <div className="w-full max-w-[750px] text-center -mt-10 md:-mt-20 relative z-10">
           <h2 className="text-[60px] sm:text-[70px] md:text-[140px] lg:text-[140px] font-thin uppercase leading-[1] tracking-[-0.02em] text-[#413C3C]">
-            ONX DELIVERS
+            WE DELIVER
             <br />
             POWER.
           </h2>
-          <p className="text-xs font-normal uppercase tracking-wide text-onx-black mt-6 max-w-[450px] mx-auto">
-            ONX is engineered for precision, built to deliver consistent performance when it matters most.
+          <p className="text-xs font-normal uppercase tracking-wider text-onx-black mt-6 max-w-[500px] mx-auto">
+            We are engineered for precision, built to deliver consistent performance when it matters most.
             Every detail is refined for control, reliability, and a seamless experience you can trust.</p>
         </div>
 

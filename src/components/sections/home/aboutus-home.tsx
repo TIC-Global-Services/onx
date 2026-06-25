@@ -20,7 +20,7 @@ export function AboutUsHomeSection() {
 
           <div className="mt-10">
             <TextReveal 
-              text="The leaque spoke. ONX listened."
+              text="The league spoke. We listened."
               className="text-5xl tracking-wider leading-tight font-medium text-onx-near-black"
             />
           </div>

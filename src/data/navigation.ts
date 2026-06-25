@@ -5,9 +5,9 @@ export const mainNavItems: NavItem[] = [
     label: "Gears",
     href: "/gears",
     children: [
-      { label: "Rifle & Guns", href: "/gears/rifles-and-guns" },
+      { label: "Archery", href: "/gears/bow-and-arrow" },
+      { label: "Shooting", href: "/gears/shooting" },
       { label: "Darts", href: "/gears/darts" },
-      { label: "Bow & Arrow", href: "/gears/bow-and-arrow" },
     ],
   },
   { label: "Our Story", href: "/our-story" },

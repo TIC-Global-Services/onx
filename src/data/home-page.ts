@@ -4,19 +4,19 @@ import { homeFeaturedProducts } from "./products";
 export const homePageData: HomePageData = {
   categories: [
     {
-      id: "rifles-guns",
-      name: "Rifles & Guns",
-      slug: "/gears/rifles-and-guns",
-      description:
-        "Our rifles and guns are built for precision and engineered to perform, combining rugged durability with refined design for a seamless shooting experience.",
-      productCount: 10,
-    },
-    {
       id: "archery",
       name: "Archery",
       slug: "/gears/bow-and-arrow",
       description:
         "This archery collection is crafted for those who value precision, focus, and control. Each piece is designed with durability and balance in mind.",
+      productCount: 10,
+    },
+    {
+      id: "shooting",
+      name: "Shooting",
+      slug: "/gears/shooting",
+      description:
+        "Our shooting gears are built for precision and engineered to perform, combining rugged durability with refined design for a seamless shooting experience.",
       productCount: 10,
     },
     {

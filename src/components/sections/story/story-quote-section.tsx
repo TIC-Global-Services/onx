@@ -13,7 +13,7 @@ export function StoryQuoteSection() {
         </div>
 
         <TextReveal
-          text='"At ONX, the vision has always been clear: to build something that stands for purpose, precision, and progress. Every decision, every detail, and every step forward reflects a commitment to doing things the right way."'
+          text='"For us, the vision has always been clear: to build something that stands for purpose, precision, and progress. Every decision, every detail, and every step forward reflects a commitment to doing things the right way."'
           className="text-3xl sm:text-[32px] md:text-[40px] lg:text-3xl font-thin md:font-normal leading-[1.3] text-onx-near-black max-w-[350px] md:max-w-[800px] mb-16 tracking-wide"
         />
 

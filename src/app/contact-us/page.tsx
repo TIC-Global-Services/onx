@@ -2,12 +2,11 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { ContactHeroSection } from "@/components/sections/contact/contact-hero-section";
 import { ContactInfoSection } from "@/components/sections/contact/contact-info-section";
-import { ContactMapSection } from "@/components/sections/contact/contact-map-section";
 import { ContactMarqueeSection } from "@/components/sections/shared/contact-marquee-section";
 
 export const metadata = {
-  title: "Contact Us - ONX Sports",
-  description: "For bookings, enquiries, or just to take your first shot get in touch with ONX Target Sportz.",
+  title: "Contact Us - Arc & Bore",
+  description: "For bookings, enquiries, or just to take your first shot get in touch with our team.",
 };
 
 export default function ContactUsPage() {
@@ -21,7 +20,6 @@ export default function ContactUsPage() {
       <main className="flex-grow">
         <ContactHeroSection />
         <ContactInfoSection />
-        <ContactMapSection />
         <ContactMarqueeSection />
       </main>
 

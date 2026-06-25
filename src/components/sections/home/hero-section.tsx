@@ -77,10 +77,11 @@ export function HeroSection() {
                 onMouseMove={(e) => setCursorPos({ x: e.clientX, y: e.clientY })}
                 onMouseEnter={() => setHoveredStripe("headphones")}
                 onMouseLeave={() => setHoveredStripe(null)}
+                data-hide-cursor="true"
                 className="w-full h-full bg-onx-red overflow-hidden relative cursor-pointer"
               >
                 <div className="absolute top-0 left-1/2 w-[250%] h-full -translate-x-1/2 bg-onx-red flex items-center justify-center skew-x-[12deg]">
-                  <img src="/images/redbanners/headphones2.png" alt="Headphones" className="w-full h-full object-cover object-[30%_50%] scale-120 " />
+                  <img src="/images/redbanners/headphones2.png" alt="Headphones" className="w-full h-full object-cover object-[30%_50%] scale-120 pointer-events-none select-none" />
                 </div>
               </motion.div>
             </motion.div>
@@ -98,10 +99,11 @@ export function HeroSection() {
                 onMouseMove={(e) => setCursorPos({ x: e.clientX, y: e.clientY })}
                 onMouseEnter={() => setHoveredStripe("archery")}
                 onMouseLeave={() => setHoveredStripe(null)}
+                data-hide-cursor="true"
                 className="w-full h-full bg-onx-red overflow-hidden relative cursor-pointer"
               >
                 <div className="absolute top-0 left-1/2 w-[250%] h-full -translate-x-1/2 bg-onx-red flex items-center justify-center skew-x-[12deg]">
-                  <img src="/images/redbanners/archer.png" alt="Archery" className="w-full h-full object-cover object-[30%_20%]" />
+                  <img src="/images/redbanners/archer.png" alt="Archery" className="w-full h-full object-cover object-[30%_20%] pointer-events-none select-none" />
                 </div>
               </motion.div>
             </motion.div>
@@ -119,10 +121,11 @@ export function HeroSection() {
                 onMouseMove={(e) => setCursorPos({ x: e.clientX, y: e.clientY })}
                 onMouseEnter={() => setHoveredStripe("darts")}
                 onMouseLeave={() => setHoveredStripe(null)}
+                data-hide-cursor="true"
                 className="w-full h-full bg-onx-red overflow-hidden relative cursor-pointer"
               >
                 <div className="absolute top-0 left-1/2 w-[250%] h-full -translate-x-1/2 bg-onx-red flex items-center justify-center skew-x-[12deg]">
-                  <img src="/images/redbanners/darts.png" alt="Darts" className="w-full h-full object-cover object-[45%_50%]" />
+                  <img src="/images/redbanners/darts.png" alt="Darts" className="w-full h-full object-cover object-[45%_50%] pointer-events-none select-none" />
                 </div>
               </motion.div>
             </motion.div>
@@ -140,10 +143,11 @@ export function HeroSection() {
                 onMouseMove={(e) => setCursorPos({ x: e.clientX, y: e.clientY })}
                 onMouseEnter={() => setHoveredStripe("revolver")}
                 onMouseLeave={() => setHoveredStripe(null)}
+                data-hide-cursor="true"
                 className="w-full h-full bg-onx-red overflow-hidden relative cursor-pointer"
               >
                 <div className="absolute top-0 left-1/2 w-[250%] h-full -translate-x-1/2 bg-onx-red flex items-center justify-center skew-x-[12deg]">
-                  <img src="/images/redbanners/redrevolver.png" alt="Revolver" className="w-full h-full object-cover object-[60%_50%]" />
+                  <img src="/images/redbanners/redrevolver.png" alt="Revolver" className="w-full h-full object-cover object-[60%_50%] pointer-events-none select-none" />
                 </div>
               </motion.div>
             </motion.div>
@@ -153,14 +157,17 @@ export function HeroSection() {
         </div>
       </Container>
 
-      {hoveredStripe && (
-        <div
-          className="fixed pointer-events-none z-[100] bg-onx-black text-white text-xs uppercase font-bold tracking-[0.2em] px-4 py-2 rounded-full shadow-lg whitespace-nowrap"
-          style={{ left: cursorPos.x, top: cursorPos.y, transform: "translate(-50%, -50%)" }}
-        >
-          VIEW MORE
-        </div>
-      )}
+      <div
+        className="fixed pointer-events-none z-[100] bg-onx-black text-white text-xs uppercase font-bold tracking-[0.2em] px-4 py-2 rounded-full shadow-lg whitespace-nowrap transition-all duration-200 ease-out"
+        style={{ 
+          left: cursorPos.x, 
+          top: cursorPos.y, 
+          transform: `translate(-50%, -50%) scale(${hoveredStripe ? 1 : 0.8})`,
+          opacity: hoveredStripe ? 1 : 0
+        }}
+      >
+        VIEW MORE
+      </div>
 
       {selectedId && (
         <StripeExpansionModal

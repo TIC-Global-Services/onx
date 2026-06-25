@@ -26,7 +26,7 @@ export function ArenaSplitSection() {
                 <span className="relative z-10">FOCUS</span>
               </span>
             </h3>
-            <p className="text-onx-white text-xs font-normal leading-wide tracking-wide uppercase">
+            <p className="text-onx-white text-xs font-normal leading-wide tracking-wider uppercase">
               Where focus sharpens into precision, every draw, aim, and release is crafted to perfection—training your control, building discipline, and delivering every arrow exactly where it belongs.
             </p>
           </div>

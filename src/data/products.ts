@@ -10,9 +10,9 @@ export const products: Product[] = [
     isBestSeller: true,
   },
   {
-    id: "onx-1-rifle",
-    name: "ONX-1 Rifle",
-    slug: "onx-1-rifle",
+    id: "ab-1-rifle",
+    name: "AB-1 Rifle",
+    slug: "ab-1-rifle",
     price: 100000, // ₹1,000.00
     image: "/images/onx-1-rifle.jpg",
     isBestSeller: true,
@@ -52,5 +52,5 @@ export const homeFeaturedProducts: Product[] = [
   products[0], // Precision Gun (best seller)
   products[3], // Nova Beanie
   products[2], // BP Crewneck
-  products[1], // ONX-1 Rifle (best seller)
+  products[1], // AB-1 Rifle (best seller)
 ];

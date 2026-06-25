@@ -26,8 +26,8 @@ export function CategoryLinksSection({ categories }: CategoryLinksSectionProps) 
             >
               {/* Leading image (for Rifles, Archery, Darts) */}
               <div className="w-[60px] h-[40px] md:w-[100px] md:h-[60px] flex-shrink-0 flex items-center justify-center rounded overflow-hidden mix-blend-multiply">
-                {category.name.toLowerCase() === 'rifles & guns' && (
-                  <img src="/images/explore/revolver.png" alt="Rifles" className="w-full h-full object-contain" />
+                {category.name.toLowerCase() === 'shooting' && (
+                  <img src="/images/explore/revolver.png" alt="Shooting" className="w-full h-full object-contain" />
                 )}
                 {category.name.toLowerCase() === 'archery' && (
                   <img src="/images/explore/arrow.png" alt="Archery" className="w-full h-full object-contain" />
@@ -43,7 +43,7 @@ export function CategoryLinksSection({ categories }: CategoryLinksSectionProps) 
                   {category.name}
                 </span>
                 <span className="hidden md:flex w-[40px] h-[28px] md:w-[60px] md:h-[40px] flex-shrink-0 items-center justify-center mix-blend-multiply transition-all duration-300 group-hover:translate-y-2">
-                  {category.name.toLowerCase() === 'rifles & guns' && (
+                  {category.name.toLowerCase() === 'shooting' && (
                     <img src="/images/explore/revolver.png" alt="" className="w-full h-full object-contain" />
                   )}
                   {category.name.toLowerCase() === 'archery' && (

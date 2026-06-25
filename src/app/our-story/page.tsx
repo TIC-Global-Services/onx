@@ -8,8 +8,8 @@ import { StoryQuoteSection } from "@/components/sections/story/story-quote-secti
 import { StoryCardsSection } from "@/components/sections/story/story-cards-section";
 
 export const metadata = {
-  title: "Our Story - ONX Sports",
-  description: "ONX Sports was born from a simple idea to create a space where precision, focus, and discipline converge.",
+  title: "Our Story - Arc & Bore",
+  description: "We were born from a simple idea to create a space where precision, focus, and discipline converge.",
 };
 
 export default function OurStoryPage() {

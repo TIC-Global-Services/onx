@@ -5,7 +5,7 @@ import { FaqContentSection } from "@/components/sections/faq/faq-content-section
 import { ContactMarqueeSection } from "@/components/sections/shared/contact-marquee-section";
 
 export const metadata = {
-  title: "FAQ - ONX Sports",
+  title: "FAQ - Arc & Bore",
   description: "Find answers to the most common questions about our products, orders, and services.",
 };
 
