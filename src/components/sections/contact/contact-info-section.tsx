@@ -67,9 +67,9 @@ export function ContactInfoSection() {
         {/* Right Column Image */}
         <div className="w-full lg:w-1/4 h-[300px] lg:h-[400px] bg-onx-near-black/5 relative overflow-hidden">
           <img
-            src="/images/contact/contact-gun.jpg"
+            src="/images/contact/contact-gun.png"
             alt="Handgun closeup"
-            className="absolute inset-0 w-full h-full object-center scale-250 grayscale"
+            className="absolute inset-0 w-full h-full object-cover grayscale"
           />
         </div>
 

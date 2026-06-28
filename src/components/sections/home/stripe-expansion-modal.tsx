@@ -38,17 +38,17 @@ interface ContentItem {
 
 const contentMap: Record<Exclude<StripeId, null>, ContentItem> = {
   headphones: {
-    image: "/images/redbanners/headphones2.png",
+    image: "/images/redbanners/recurve.png",
     imageClass: "w-full h-full object-cover z-10 ",
-    objectPositionGrid: "30% 50%",
+    objectPositionGrid: "40% 50%",
     objectPositionExpandedMobile: "35% 50%",
     objectPositionExpandedDesktop: "50% 40%",
     textFilled: "SILENCE THE",
     textOutlined: "NOISE.",
     textPosition: "bottom-12 right-12 md:bottom-24 md:right-24 items-end text-right",
     buttonPosition: "mt-6",
-    gridScale: 1.2,
-    expandedScale: 1.2,
+    gridScale: 1.5,
+    expandedScale: 1.0,
   },
   archery: {
     image: "/images/redbanners/archer.png",
@@ -73,7 +73,7 @@ const contentMap: Record<Exclude<StripeId, null>, ContentItem> = {
     buttonPosition: "mb-6",
   },
   revolver: {
-    image: "/images/redbanners/redrevolver.png",
+    image: "/images/redbanners/pistol.png",
     imageClass: "w-full h-full object-cover z-10",
     objectPositionGrid: "60% 50%",
     objectPositionExpandedMobile: "55% 50%",

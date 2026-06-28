@@ -14,14 +14,14 @@ export function AboutUsHomeSection() {
               About Us
             </span>
           </div>
-            <p className="text-xl sm:text-[28px] md:text-4xl font-normal leading-[1.2] text-onx-near-black tracking-tight">
-              Quotes from our customer
-            </p>
+          <p className="text-xl sm:text-[28px] md:text-4xl font-normal leading-[1.2] text-onx-near-black tracking-tight">
+            Quotes from our customer
+          </p>
 
           <div className="mt-10">
-            <TextReveal 
+            <TextReveal
               text="The league spoke. We listened."
-              className="text-5xl tracking-wider leading-tight font-medium text-onx-near-black"
+              className="text-5xl tracking-wide leading-tight font-medium text-onx-near-black"
             />
           </div>
           <button className="mt-10 text-xs bg-onx-white border border-onx-near-black text-onx-black px-10 py-4 text-sm uppercase font-bold tracking-[0.15em] hover:bg-onx-black hover:text-white transition-colors shadow-sm">

@@ -7,12 +7,12 @@ const tabData = {
   driven: {
     title: "DRIVEN",
     text: "EVERY STEP IS POWERED BY INTENT AND AMBITION, PUSHING BOUNDARIES WITH A CLEAR VISION IN MIND. THE FOCUS REMAINS ON PROGRESS—CONSTANTLY EVOLVING, ADAPTING, AND MOVING FORWARD WITH PURPOSE.",
-    image: "/images/story/floatingbullets.png"
+    image: "/images/story/floatingpellets.png"
   },
   precise: {
     title: "PRECISE",
     text: "ATTENTION TO DETAIL DEFINES EVERY OUTCOME, WHERE NOTHING IS LEFT TO CHANCE. EACH ELEMENT IS CAREFULLY CRAFTED TO ENSURE ACCURACY, CONSISTENCY, AND A SEAMLESS EXPERIENCE.",
-    image: "/images/story/gunmen.png"
+    image: "/images/story/driven.png"
   }
 };
 

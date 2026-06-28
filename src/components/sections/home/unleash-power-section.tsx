@@ -45,14 +45,14 @@ export function UnleashPowerSection() {
 
         {/* Base Image (revealed when slider moves left) */}
         <img
-          src="/images/pistol2.png"
+          src="/images/pistol.png"
           alt="Pistol 2"
           className="absolute inset-0 w-full h-full object-cover object-center md:object-top pointer-events-none "
         />
 
         {/* Overlaid Image (revealed when slider moves right) */}
         <img
-          src="/images/smg.png"
+          src="/images/rifle.png"
           alt="SMG"
           className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
           style={{ clipPath: `polygon(0 0, ${sliderPosition}% 0, ${sliderPosition}% 100%, 0 100%)` }}
@@ -89,9 +89,9 @@ export function UnleashPowerSection() {
         {/* 5 Images Row - alternating tall/short/tall/short/tall */}
         <div className="flex gap-2 md:gap-4 w-full max-w-[1200px] mb-8 items-start">
           {[
-            { src: "/images/viewall-pistol.jpg", ratio: "aspect-[4/5]" },
-            { src: "/images/deliversPower/point.jpg", ratio: "aspect-square" },
-            { src: "/images/deliversPower/shoot.jpg", ratio: "aspect-[4/5]" },
+            { src: "/images/deliversPower/rifle.png", ratio: "aspect-[4/5]" },
+            { src: "/images/deliversPower/point.png", ratio: "aspect-square" },
+            { src: "/images/deliversPower/shoot.png", ratio: "aspect-[4/5]" },
             { src: "/images/deliversPower/scoreboard.jpg", ratio: "aspect-square" },
             { src: "/images/deliversPower/aim.jpg", ratio: "aspect-[4/5]" },
           ].map((item, i) => (

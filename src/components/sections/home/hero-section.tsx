@@ -37,7 +37,7 @@ export function HeroSection() {
   return (
     <section id="hero" className="relative w-full max-h-[100svh] bg-onx-white pb-12 md:pb-20 lg:pb-28 overflow-hidden">
       {/* Header is now part of the Hero Section */}
-      <Header />
+      <Header isHome />
 
       <Container className="pt-12 md:pt-20">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_1.2fr] gap-8 items-start pt-10 md:pt-16">
@@ -81,7 +81,7 @@ export function HeroSection() {
                 className="w-full h-full bg-onx-red overflow-hidden relative cursor-pointer"
               >
                 <div className="absolute top-0 left-1/2 w-[250%] h-full -translate-x-1/2 bg-onx-red flex items-center justify-center skew-x-[12deg]">
-                  <img src="/images/redbanners/headphones2.png" alt="Headphones" className="w-full h-full object-cover object-[30%_50%] scale-120 pointer-events-none select-none" />
+                  <img src="/images/redbanners/recurve.png" alt="Headphones" className="w-full h-full object-cover object-[40%_50%] scale-150 pointer-events-none select-none" />
                 </div>
               </motion.div>
             </motion.div>
@@ -147,7 +147,7 @@ export function HeroSection() {
                 className="w-full h-full bg-onx-red overflow-hidden relative cursor-pointer"
               >
                 <div className="absolute top-0 left-1/2 w-[250%] h-full -translate-x-1/2 bg-onx-red flex items-center justify-center skew-x-[12deg]">
-                  <img src="/images/redbanners/redrevolver.png" alt="Revolver" className="w-full h-full object-cover object-[60%_50%] pointer-events-none select-none" />
+                  <img src="/images/redbanners/pistol.png" alt="Revolver" className="w-full h-full object-cover object-[60%_50%] pointer-events-none select-none" />
                 </div>
               </motion.div>
             </motion.div>
@@ -159,9 +159,9 @@ export function HeroSection() {
 
       <div
         className="fixed pointer-events-none z-[100] bg-onx-black text-white text-xs uppercase font-bold tracking-[0.2em] px-4 py-2 rounded-full shadow-lg whitespace-nowrap transition-all duration-200 ease-out"
-        style={{ 
-          left: cursorPos.x, 
-          top: cursorPos.y, 
+        style={{
+          left: cursorPos.x,
+          top: cursorPos.y,
           transform: `translate(-50%, -50%) scale(${hoveredStripe ? 1 : 0.8})`,
           opacity: hoveredStripe ? 1 : 0
         }}

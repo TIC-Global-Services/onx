@@ -6,9 +6,10 @@ import { MobileMenu } from "./mobile-menu";
 interface HeaderProps {
   dark?: boolean;
   absolute?: boolean;
+  isHome?: boolean;
 }
 
-export function Header({ dark = false, absolute = false }: HeaderProps) {
+export function Header({ dark = false, absolute = false, isHome = false }: HeaderProps) {
   const textColor = dark ? "text-onx-white" : "text-onx-near-black";
   const hoverColor = dark ? "hover:text-onx-red" : "hover:text-onx-red";
 
@@ -23,7 +24,7 @@ export function Header({ dark = false, absolute = false }: HeaderProps) {
         {/* Center: ONX Logo */}
         <div className="flex-1 flex justify-center">
           <Link href="/" className="flex items-center">
-            <img src="/images/arc-and-bore-enhanced.png" alt="Arc & Bore Logo" className="h-20 md:h-28 w-auto object-contain translate-y-1" />
+            <img src={isHome ? "/images/arc-and-bore-enhanced.png" : "/images/arc and bore logo white.png"} alt="Arc & Bore Logo" className="h-32 md:h-40 w-auto object-contain translate-y-1" />
           </Link>
         </div>
 

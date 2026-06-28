@@ -1,4 +1,12 @@
+"use client";
+
+import { useRef } from "react";
 import Link from "next/link";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const cards = [
   {
@@ -36,18 +44,41 @@ const cards = [
 ];
 
 export function StoryCardsSection() {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useGSAP(() => {
+    const wraps = containerRef.current?.querySelectorAll(".story-card-image-wrap");
+    if (wraps && wraps.length > 0) {
+      gsap.fromTo(wraps,
+        { yPercent: -8 },
+        {
+          yPercent: 8,
+          ease: "none",
+          scrollTrigger: {
+            trigger: containerRef.current,
+            start: "top bottom",
+            end: "bottom top",
+            scrub: true
+          }
+        }
+      );
+    }
+  }, { scope: containerRef });
+
   return (
-    <section className="bg-onx-white w-full">
+    <section ref={containerRef} className="bg-onx-white w-full overflow-hidden">
       <div className="w-full flex flex-col md:flex-row h-auto md:h-[600px] lg:h-[800px]">
         {cards.map((card) => (
           <div key={card.id} className={`w-full md:w-1/3 h-[500px] sm:h-[500px] md:h-full relative flex flex-col items-center justify-between p-12 lg:p-16 overflow-hidden group ${card.bgClass}`}>
 
             {card.image && (
-              <img
-                src={card.image}
-                alt={card.title}
-                className="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-overlay group-hover:scale-105 transition-transform duration-700 z-0"
-              />
+              <div className="story-card-image-wrap absolute inset-0 w-full h-[120%] -top-[10%] z-0 pointer-events-none">
+                <img
+                  src={card.image}
+                  alt={card.title}
+                  className="w-full h-full object-cover opacity-60 mix-blend-overlay group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
             )}
 
             <div className="relative z-10 flex items-center gap-2">

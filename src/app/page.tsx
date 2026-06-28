@@ -38,7 +38,7 @@ export default function HomePage() {
         <CategoryLinksSection categories={categories} />
 
         {/* 6. Full-width interstitial — dark cinematic barrel shot */}
-        <FullwidthImageSection src="/images/pistolbanner.jpg" alt="Dark cinematic gun barrel" aspectRatio="16/9" className="grayscale" imageClassName="object-[50%_35%]" />
+        <FullwidthImageSection src="/images/pistolbanner.png" alt="Dark cinematic gun barrel" aspectRatio="16/9" className="grayscale" imageClassName="object-[50%_40%]" />
 
         {/* 7. Arena Split Section (Image left, Card right) */}
         <ArenaSplitSection />

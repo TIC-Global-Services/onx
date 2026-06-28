@@ -96,7 +96,7 @@ export function ShopShowcaseSection() {
         <div className="mx-auto w-full max-w-[1000px] flex items-center justify-center -mt-2 md:-mt-6 ">
           <img
             ref={imageRef}
-            src="/images/shotgun.png"
+            src="/images/bow.png"
             alt="Shotgun"
             className="w-[600px] h-auto object-contain"
           />
