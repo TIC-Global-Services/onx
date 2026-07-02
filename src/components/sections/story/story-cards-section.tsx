@@ -11,12 +11,13 @@ gsap.registerPlugin(ScrollTrigger);
 const cards = [
   {
     id: "burn",
-    text: "A word from the founder",
+    text: "View Our Collection",
     title: "BURN",
     action: "EXPLORE",
     image: "/images/story/story-burn.png",
     bgClass: "bg-onx-near-black",
     textClass: "text-onx-white",
+    route:"/",
     squareClass: "bg-onx-white",
     btnClass: "bg-onx-white text-onx-near-black hover:bg-gray-200"
   },
@@ -26,6 +27,7 @@ const cards = [
     title: "FAQ",
     action: "READ",
     bgClass: "bg-[#F5F5F5]",
+    route:"/faq",
     textClass: "text-onx-near-black",
     squareClass: "bg-onx-near-black",
     btnClass: "bg-onx-near-black text-onx-white hover:bg-black"
@@ -39,6 +41,7 @@ const cards = [
     bgClass: "bg-onx-near-black",
     textClass: "text-onx-white",
     squareClass: "bg-onx-white",
+    route:"/",
     btnClass: "bg-onx-white text-onx-near-black hover:bg-gray-200"
   }
 ];
@@ -66,7 +69,7 @@ export function StoryCardsSection() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="bg-onx-white w-full overflow-hidden">
+    <section ref={containerRef} className="bg-onx-white w-full overflow-hidden mb-10">
       <div className="w-full flex flex-col md:flex-row h-auto md:h-[600px] lg:h-[800px]">
         {cards.map((card) => (
           <div key={card.id} className={`w-full md:w-1/3 h-[500px] sm:h-[500px] md:h-full relative flex flex-col items-center justify-between p-12 lg:p-16 overflow-hidden group ${card.bgClass}`}>
@@ -92,7 +95,7 @@ export function StoryCardsSection() {
               {card.title}
             </h2>
 
-            <Link href="#" className={`relative z-10 px-8 py-4 text-xs md:text-[13px] font-bold uppercase tracking-wider transition-colors ${card.btnClass}`}>
+            <Link href={card.route} className={`relative z-10 px-8 py-4 text-xs md:text-[13px] font-bold uppercase tracking-wider transition-colors ${card.btnClass}`}>
               {card.action}
             </Link>
 

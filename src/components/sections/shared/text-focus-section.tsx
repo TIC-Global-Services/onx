@@ -13,7 +13,7 @@ export function TextFocusSection() {
             </span>
           </div>
 
-          <h2 className="text-[38px] sm:text-[40px] md:text-[42px] lg:text-[56px] font-normal uppercase leading-tight tracking-tight text-onx-near-black mb-12">
+          <h2 className="text-[10vw] sm:text-[40px] md:text-[42px] lg:text-[56px] font-normal uppercase leading-tight tracking-tight text-onx-near-black mb-12">
             OWN THE TARGET CONTROL EVERY SHOT
           </h2>
 

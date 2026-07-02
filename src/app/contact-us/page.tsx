@@ -15,7 +15,7 @@ export default function ContactUsPage() {
       {/* 
         The hero section in the design is dark and the nav sits transparently on top of it.
       */}
-      <Header dark absolute />
+      <Header absolute dark  />
       
       <main className="flex-grow">
         <ContactHeroSection />
@@ -23,7 +23,7 @@ export default function ContactUsPage() {
         <ContactMarqueeSection />
       </main>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

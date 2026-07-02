@@ -3,6 +3,7 @@ import { Antonio } from "next/font/google";
 import "./globals.css";
 import { ProgressiveBlur } from "@/components/ui/progressive-blur";
 import { CustomCursor } from "@/components/ui/custom-cursor";
+import { Footer } from "@/components/layout/footer";
 
 const antonio = Antonio({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function RootLayout({
         {children}
         <ProgressiveBlur />
         <CustomCursor />
+        <Footer />
       </body>
     </html>
   );

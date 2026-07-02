@@ -57,7 +57,7 @@ export function ShopShowcaseSection() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} id="shop-showcase" className="min-h-screen flex flex-col justify-center bg-onx-white py-8 md:py-12  overflow-hidden">
+    <section ref={sectionRef} id="shop-showcase" className="min-h-screen flex flex-col justify-center bg-onx-white py-5 md:py-12  overflow-hidden">
 
       {/* Massive horizontal typography band spanning full width */}
       <div className="w-full mb-12 md:mb-32 flex whitespace-nowrap">
@@ -84,7 +84,7 @@ export function ShopShowcaseSection() {
 
         {/* Description paragraph */}
         <div className="mx-auto max-w-[900px] text-center">
-          <p className="text-xl text-xl text-onx-near-black font-medium leading-wide mb-8">Precision Performance</p>
+          <p className="text-xl md:text-xl text-onx-near-black font-medium uppercase leading-wide mb-8">Precision Performance</p>
           <TextReveal
             text="We are built for those who thrive on precision, discipline, and performance. Designed as a space where focus meets action, it brings together modern training environments with a strong foundation in skill-based sports like shooting and archery."
             className="text-3xl text-3xl font-thin md:font-normal leading-tight text-onx-near-black"

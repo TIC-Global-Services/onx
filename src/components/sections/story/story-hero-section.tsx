@@ -9,6 +9,7 @@ export function StoryHeroSection() {
           <img
             src="/images/story/bornpassion.png"
             alt="Born from a passion"
+          style={{objectPosition:"50% 20%"}}
             className="absolute inset-0 w-full h-full object-cover z-0 grayscale"
           />
           <h1 className="relative z-20 text-[32px] sm:text-6xl md:text-[70px] lg:text-[90px] font-normal uppercase leading-tight text-onx-white max-w-[600px] tracking-tight md:mt-auto md:-translate-y-8 lg:-translate-y-12">

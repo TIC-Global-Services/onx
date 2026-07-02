@@ -40,36 +40,39 @@ export function HeroSection() {
       <Header isHome />
 
       <Container className="pt-12 md:pt-20">
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_1.2fr] gap-8 items-start pt-10 md:pt-16">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_1.2fr] gap-8 items-start pt-5 md:pt-16">
 
           {/* Left Text Column */}
           <div className="flex flex-col items-center text-center md:items-start md:text-left z-10">
-            <h1 className="flex flex-col">
-              <span className="text-[64px] sm:text-[80px] md:text-8xl lg:text-9xl font-bold uppercase leading-[1.1] md:leading-tight tracking-[-0.02em] text-onx-red" style={{ WebkitTextStroke: "2px var(--color-onx-red)" }}>
+            <h1 className="flex flex-col leading-[1.3]">
+              <span className="text-[46px] sm:text-[80px] md:text-8xl lg:text-9xl font-bold uppercase  md:leading-tight tracking-wide md:tracking-[-0.02em] text-onx-red" style={{ WebkitTextStroke: "2px var(--color-onx-red)" }}>
                 BUILT TO
               </span>
-              <span className="text-[64px] sm:text-[80px] md:text-8xl lg:text-9xl font-bold uppercase leading-[1.1] md:leading-tight tracking-[-0.02em] text-onx-white" style={{ WebkitTextStroke: "2px var(--color-onx-red)" }}>
+              <span className="text-[46px] sm:text-[80px] hidden md:block md:text-8xl lg:text-9xl font-bold uppercase md:leading-tight md:tracking-[-0.02em] text-onx-white" style={{ WebkitTextStroke: "2px var(--color-onx-red)" }}>
+                DECIDE
+              </span>
+              <span className="text-[46px] sm:text-[80px] md:text-8xl md:hidden lg:text-9xl font-bold uppercase md:leading-tight md:tracking-[-0.02em] text-onx-white" style={{ WebkitTextStroke: "1px var(--color-onx-red)" }}>
                 DECIDE
               </span>
             </h1>
 
             <Link
               href="/gears"
-              className="mt-8 md:mt-10 w-[180px] h-[60px] md:w-[229px] md:h-[83px] flex items-center justify-center bg-onx-red text-onx-white text-xl md:text-[32px] uppercase tracking-tight font-bold hover:bg-onx-black transition-colors duration-300"
+              className="mt-5 md:mt-10 w-[30vw] h-[60px] md:w-[229px] md:h-[83px] flex items-center justify-center bg-onx-red text-onx-white text-xl md:text-[32px] uppercase tracking-tight font-bold hover:bg-onx-black transition-colors duration-300"
             >
               SHOP NOW
             </Link>
           </div>
 
           {/* Right Stripes/Image Collage Column */}
-          <div className="relative h-[450px] md:h-[650px] lg:h-[750px] w-full flex justify-end items-center gap-4 md:gap-6 overflow-visible pr-4 md:pr-2 skew-x-[-10deg] translate-x-4 md:translate-x-18 md:-translate-y-36 mt-12 md:mt-0">
+          <div className="relative h-[350px] md:h-[650px] lg:h-[750px] w-full flex justify-end items-center gap-2 md:gap-6 overflow-visible pr-10 md:pr-2 skew-x-[-10deg] translate-x-4 md:translate-x-18 md:-translate-y-36 mt-12 md:mt-0">
 
             {/* Stripe 1: Earmuffs (From Bottom) */}
             <motion.div
               initial={{ y: "100%", opacity: 0 }}
               animate={{ y: "10%", opacity: 1 }}
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
-              className="w-[35%] h-[80%] relative z-10 drop-shadow-2xl"
+              className="w-[25%] md:w-[35%] mb-20 md:mb-0 h-[80%] relative z-10 drop-shadow-2xl"
             >
               <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -91,7 +94,7 @@ export function HeroSection() {
               initial={{ y: "-100%", opacity: 0 }}
               animate={{ y: "-11%", opacity: 1 }}
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-              className="w-[35%] h-[100%] relative z-10 drop-shadow-2xl"
+              className="w-[25%] md:w-[35%] h-[100%] relative z-10 drop-shadow-2xl"
             >
               <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -113,7 +116,7 @@ export function HeroSection() {
               initial={{ y: "100%", opacity: 0 }}
               animate={{ y: "10%", opacity: 1 }}
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
-              className="w-[35%] h-[80%] relative z-10 drop-shadow-2xl"
+              className="w-[25%] md:w-[35%] h-[90%] md:h-[80%] mb-30 md:mb-0 relative z-10 drop-shadow-2xl"
             >
               <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -135,7 +138,7 @@ export function HeroSection() {
               initial={{ y: "-100%", opacity: 0 }}
               animate={{ y: "-2%", opacity: 1 }}
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.4 }}
-              className="w-[35%] h-[95%] relative z-10 drop-shadow-2xl"
+              className="w-[25%] md:w-[35%] h-[95%] mb-20 md:mb-0 relative z-10 drop-shadow-2xl"
             >
               <motion.div
                 whileHover={{ scale: 1.05 }}

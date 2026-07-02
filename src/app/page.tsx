@@ -20,7 +20,7 @@ export default function HomePage() {
 
   return (
     <div className="bg-onx-white min-h-screen">
-      <TopBanner />
+      {/* <TopBanner /> */}
       <main>
         {/* 1. Hero — Red/White layout with striped image masks */}
         <HeroSection />
@@ -54,9 +54,8 @@ export default function HomePage() {
 
         {/* 10. Unleash the power — Massive product image, 4 detail shots, typography */}
         <UnleashPowerSection />
-
       </main>
-      <Footer />
+
     </div>
   );
 }

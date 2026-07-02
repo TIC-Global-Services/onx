@@ -73,7 +73,7 @@ export function FaqContentSection() {
           </div>
 
           <h2 className="text-[28px] sm:text-[32px] md:text-[40px] lg:text-[45px] font-bold uppercase leading-[1.1] text-onx-near-black mb-8 tracking-tight">
-            FREQUENTLY ASKED<br/>QUESTIONS
+            FREQUENTLY ASKED<br className="hidden md:block"/> QUESTIONS
           </h2>
 
           <p className="text-sm md:text-xl text-onx-near-black leading-[1.6] mb-12">

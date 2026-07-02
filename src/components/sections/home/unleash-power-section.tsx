@@ -31,15 +31,15 @@ export function UnleashPowerSection() {
   }, { scope: containerRef });
 
   return (
-    <section id="unleash-power" className="bg-onx-warm-light pb-16 overflow-hidden flex flex-col items-center">
+    <section id="unleash-power" className="pb-16 overflow-hidden flex flex-col items-center">
 
       {/* Interactive Image Slider - Full Bleed */}
-      <div className="w-full h-[400px] sm:h-[500px] md:h-[700px] lg:h-[900px] bg-onx-near-black/5 flex items-center justify-center mb-16 md:mb-24 relative overflow-hidden group">
+      <div className="w-full h-[280px] sm:h-[500px] md:h-[700px] lg:h-[900px] bg-onx-near-black/5 flex items-center justify-center mb-16 md:mb-24 relative overflow-hidden group">
 
-        <div className="absolute top-8 left-8 md:top-12 md:left-12 z-30 pointer-events-none">
+        <div className="absolute top-4 left-8 md:top-12 md:left-12 z-30 pointer-events-none">
           <span className="text-xs md:text-sm uppercase font-bold tracking-[0.3em] text-onx-near-black">GUN</span>
         </div>
-        <div className="absolute top-8 right-8 md:top-12 md:right-12 z-30 pointer-events-none">
+        <div className="absolute top-4 right-8 md:top-12 md:right-12 z-30 pointer-events-none">
           <span className="text-xs md:text-sm uppercase font-bold tracking-[0.3em] text-onx-near-black">PISTOL</span>
         </div>
 
@@ -85,7 +85,7 @@ export function UnleashPowerSection() {
 
       </div>
 
-      <div ref={containerRef} className="max-w-[1440px] mx-auto px-5 md:px-10 flex flex-col items-center w-full">
+      <div ref={containerRef} className=" mx-auto px-5 md:px-10 flex flex-col items-center w-full">
         {/* 5 Images Row - alternating tall/short/tall/short/tall */}
         <div className="flex gap-2 md:gap-4 w-full max-w-[1200px] mb-8 items-start">
           {[
@@ -108,7 +108,7 @@ export function UnleashPowerSection() {
             <br />
             POWER.
           </h2>
-          <p className="text-xs font-normal uppercase tracking-wider text-onx-black mt-6 max-w-[500px] mx-auto">
+          <p className="text-xs font-normal uppercase tracking-wider text-onx-black mt-6 px-12 md:px-0 md:max-w-[500px] mx-auto">
             We are engineered for precision, built to deliver consistent performance when it matters most.
             Every detail is refined for control, reliability, and a seamless experience you can trust.</p>
         </div>

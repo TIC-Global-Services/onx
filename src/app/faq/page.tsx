@@ -12,7 +12,7 @@ export const metadata = {
 export default function FaqPage() {
   return (
     <div className="min-h-screen bg-onx-white flex flex-col">
-      <Header dark absolute />
+      <Header  dark absolute />
       
       <main className="flex-grow">
         <FaqHeroSection />
@@ -20,7 +20,7 @@ export default function FaqPage() {
         <ContactMarqueeSection />
       </main>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

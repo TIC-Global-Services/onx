@@ -2,10 +2,10 @@ export function ProductsCardsSection() {
   return (
     <section id="products-cards" className="bg-onx-white py-4 md:py-8">
       <div className="w-full px-2 md:px-4">
-        <div className="flex overflow-x-auto snap-x snap-mandatory md:grid md:grid-cols-3 gap-4 pb-4 md:pb-0">
+        <div className="flex overflow-x-auto snap-x snap-mandatory md:grid md:grid-cols-3 md:gap-4 pb-4 md:pb-0">
 
           {/* Card 1: View All Image */}
-          <div className="min-w-[85vw] md:min-w-0 snap-center aspect-[4/6] relative bg-onx-near-black overflow-hidden flex flex-col items-center justify-center p-6">
+          <div className="min-w-[85vw] md:min-w-0 snap-center aspect-[4/3]  md:aspect-[4/6] relative bg-onx-near-black overflow-hidden flex flex-col items-center justify-center p-6">
             <img src="/images/viewall-pistol.png" alt="View All Pistol" className="absolute inset-0 w-full h-full object-cover" />
             <div className="absolute inset-0 bg-black/20 pointer-events-none"></div>
             <button className="relative z-10 text-xs bg-onx-white text-onx-black px-10 py-4 text-sm uppercase font-bold tracking-[0.15em] hover:bg-onx-red hover:text-white transition-colors duration-300 shadow-xl">

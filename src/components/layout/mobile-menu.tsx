@@ -81,7 +81,7 @@ export function MobileMenu({ dark = false }: { dark?: boolean }) {
         aria-label="Open menu"
       >
         <span className="text-xl md:text-2xl font-bold leading-none">=</span>
-        <span className="text-sm md:text-base uppercase tracking-widest font-bold">MENU</span>
+        <span className="text-base uppercase tracking-widest font-bold">MENU</span>
       </button>
 
       <AnimatePresence onExitComplete={onExitComplete}>
@@ -105,22 +105,23 @@ export function MobileMenu({ dark = false }: { dark?: boolean }) {
               transition={{ type: "spring", damping: 28, stiffness: 220 }}
             >
               <div className="flex h-[78px] items-center px-5 md:px-10 border-b border-gray-200">
-                <button
+                {/* <button
                   type="button"
                   onClick={closeMenu}
                   className="flex items-center gap-2 text-black hover:text-onx-red transition-colors"
                   aria-label="Close menu"
                 >
                   <span className="text-xl md:text-2xl font-bold leading-none">=</span>
-                  <span className="text-sm md:text-base uppercase tracking-widest font-bold">MENU</span>
-                </button>
+                  <span className="text-xl md:text-base uppercase tracking-widest font-bold">MENU</span>
+                </button> */}
 
-                <div className="flex-1 flex justify-end">
+                <div className="flex-1 flex justify-end">                   
                   <button
                     type="button"
                     onClick={closeMenu}
-                    className="text-black hover:text-onx-red transition-colors"
+                    className="text-black hover:text-onx-red transition-colors flex items-center gap-2"
                   >
+                    <span className="text-xl md:text-base uppercase tracking-widest font-bold">CLOSE</span>
                     <X size={24} strokeWidth={1.5} />
                   </button>
                 </div>

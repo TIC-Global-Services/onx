@@ -8,7 +8,7 @@ export function ContactInfoSection() {
         {/* Left Column */}
         <div className="w-full lg:w-1/4">
           <p className="text-base md:text-xl leading-[1.6] text-onx-near-black max-w-[250px]">
-            For bookings, enquiries, or just to take your first shot get in touch with ONX.
+            For bookings, enquiries, or just to take your first shot get in touch with Arc&Bore.
           </p>
         </div>
 
@@ -19,7 +19,7 @@ export function ContactInfoSection() {
           <div>
             <h4 className="text-base md:text-xl uppercase font-bold tracking-tight mb-4 text-onx-near-black">BOOKINGS</h4>
             <div className="flex flex-col gap-1 text-sm md:text-base text-onx-near-black/70">
-              <a href="mailto:book@onxsportz.com" className="hover:text-onx-red transition-colors">book@onxsportz.com</a>
+              <a href="mailto:book@onxsportz.com" className="hover:text-onx-red transition-colors">book@ArcandBore.com</a>
               <a href="tel:XXXXX XXXXX" className="hover:text-onx-red transition-colors">XXXXX XXXXX</a>
             </div>
           </div>
@@ -28,7 +28,7 @@ export function ContactInfoSection() {
           <div>
             <h4 className="text-base md:text-xl uppercase font-bold tracking-tight mb-4 text-onx-near-black">GENERAL ENQUIRIES</h4>
             <div className="flex flex-col gap-1 text-sm md:text-base text-onx-near-black/70">
-              <a href="mailto:hello@onxsportz.com" className="hover:text-onx-red transition-colors">hello@onxsportz.com</a>
+              <a href="mailto:hello@onxsportz.com" className="hover:text-onx-red transition-colors">hello@ArcandBore.com</a>
               <a href="tel:XXXXX XXXXX" className="hover:text-onx-red transition-colors">XXXXX XXXXX</a>
             </div>
           </div>
@@ -37,7 +37,7 @@ export function ContactInfoSection() {
           <div>
             <h4 className="text-base md:text-xl uppercase font-bold tracking-tight mb-4 text-onx-near-black">LOCATION</h4>
             <div className="text-sm md:text-base text-onx-near-black/70 leading-[1.5]">
-              ONX Target Sportz<br />
+              Arc&Bore<br />
               Anna Nagar, Chennai<br />
               Tamil Nadu
             </div>

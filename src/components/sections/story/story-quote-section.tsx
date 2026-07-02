@@ -2,12 +2,12 @@ import { TextReveal } from "@/components/ui/text-reveal";
 
 export function StoryQuoteSection() {
   return (
-    <section className="min-h-screen flex flex-col justify-center bg-onx-white py-24 md:py-40">
-      <div className="max-w-[1440px] mx-auto px-5 md:px-10 flex flex-col items-center text-center">
+    <section className="min-h-screen flex flex-col justify-center bg-onx-white py-10 md:py-40">
+      <div className="max-w-7xl mx-auto px-5 md:px-10 flex flex-col items-center text-center">
 
         <div className="flex items-center gap-2 mb-12">
           <div className="w-2 h-2 bg-onx-near-black"></div>
-          <span className="text-xs md:text-base uppercase font-normal tracking-tight text-onx-near-black">
+          <span className="text-base md:text-base uppercase font-normal tracking-tight text-onx-near-black">
             word from the founder
           </span>
         </div>

@@ -13,7 +13,7 @@ export function CategoryLinksSection({ categories }: CategoryLinksSectionProps) 
 
           <div className="flex items-center gap-2 mb-4">
             <div className="w-2 h-2 bg-onx-red"></div>
-            <span className="text-xs uppercase font-normal tracking-[0.3em] text-onx-near-black font-montserrat">
+            <span className="text-xs uppercase font-normal tracking-[0.3em] text-onx-near-black font-antonio">
               Explore Collections
             </span>
           </div>

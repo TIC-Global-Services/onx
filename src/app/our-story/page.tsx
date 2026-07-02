@@ -29,7 +29,7 @@ export default function OurStoryPage() {
         <StoryCardsSection />
       </main>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

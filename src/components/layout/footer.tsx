@@ -71,7 +71,7 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-onx-white p-2 sm:p-4 md:p-6 mt-8 md:mt-16">
+    <footer className="bg-onx-white p-2 sm:p-4 md:p-6 mt-0 md:mt-0">
       <div className="bg-onx-warm-light rounded-[24px] md:rounded-[40px] pt-16 md:pt-24 px-8 md:px-16 overflow-hidden max-w-[1440px] mx-auto">
         {/* Columns */}
         <div className="grid grid-cols-2 gap-12 md:grid-cols-12 mb-4 md:mb-8">

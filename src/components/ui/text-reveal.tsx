@@ -13,10 +13,11 @@ interface TextRevealProps {
   text: string;
   secondaryText?: string;
   className?: string;
+  starting?: string;
   pin?: boolean;
 }
 
-export function TextReveal({ text, secondaryText, className = "", pin = true }: TextRevealProps) {
+export function TextReveal({ text, secondaryText, className = "", starting = "center center", pin = true }: TextRevealProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLParagraphElement>(null);
 
@@ -36,7 +37,7 @@ export function TextReveal({ text, secondaryText, className = "", pin = true }: 
         scrollTrigger: {
           trigger: containerRef.current,
           pin: pin ? (containerRef.current?.closest("section") || true) : false,
-          start: "center center",
+          start: starting,
           end: isDesktop ? "+=150%" : "+=100%",
           scrub: 0.7,
         }
@@ -56,8 +57,8 @@ export function TextReveal({ text, secondaryText, className = "", pin = true }: 
             return <span key={i}>{word}</span>;
           }
           return (
-            <span 
-              key={i} 
+            <span
+              key={i}
               className="word-span text-onx-near-black/10 inline-block"
             >
               {word}
@@ -73,7 +74,7 @@ export function TextReveal({ text, secondaryText, className = "", pin = true }: 
               return (
                 <span
                   key={`s-${i}`}
-                  className="word-span text-onx-near-black/10 inline-block"
+                  className="word-span text-onx-near-black/10 inline-block whitespace-pre-wrap"
                 >
                   {word}
                 </span>

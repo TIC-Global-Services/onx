@@ -4,8 +4,8 @@ import { TextReveal } from "@/components/ui/text-reveal";
 
 export function AboutUsHomeSection() {
   return (
-    <section id="about-us" className="min-h-screen flex flex-col justify-center bg-onx-white py-24 md:py-32">
-      <Container>
+    <section id="about-us" className="md:min-h-screen flex flex-col justify-center bg-onx-white py-14 md:py-32">
+      {/* <Container> */}
         <div className="mx-auto max-w-[500px] text-center">
 
           <div className="flex items-center justify-center gap-2 mb-8">
@@ -20,15 +20,17 @@ export function AboutUsHomeSection() {
 
           <div className="mt-10">
             <TextReveal
+              starting="center 70%"
+              pin={false}
               text="The league spoke. We listened."
-              className="text-5xl tracking-wide leading-tight font-medium text-onx-near-black"
+              className="text-[12vw] md:text-5xl tracking-wide leading-tight font-medium text-onx-near-black"
             />
           </div>
           <button className="mt-10 text-xs bg-onx-white border border-onx-near-black text-onx-black px-10 py-4 text-sm uppercase font-bold tracking-[0.15em] hover:bg-onx-black hover:text-white transition-colors shadow-sm">
             Learn More
           </button>
         </div>
-      </Container>
+      {/* </Container> */}
     </section>
   );
 }
