@@ -41,7 +41,7 @@ const contentMap: Record<Exclude<StripeId, null>, ContentItem> = {
     image: "/images/redbanners/recurve.png",
     imageClass: "w-full h-full object-cover z-10 ",
     objectPositionGrid: "40% 50%",
-    objectPositionExpandedMobile: "35% 50%",
+    objectPositionExpandedMobile: "50% 50%",
     objectPositionExpandedDesktop: "50% 40%",
     textFilled: "SILENCE THE",
     textOutlined: "NOISE.",

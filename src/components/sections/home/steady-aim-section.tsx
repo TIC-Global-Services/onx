@@ -39,7 +39,7 @@ export function SteadyAimSection() {
           src="/steadyaimvideo.mp4"
           muted
           playsInline
-          className="w-full h-full object-cover opacity-80"
+          className="w-full h-full object-cover object-[75%_50%] md:object-center opacity-80"
         />
         <div className="absolute inset-0 bg-[#FA261A]/20 mix-blend-multiply" />
       </div>
