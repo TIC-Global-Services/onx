@@ -4,6 +4,7 @@ import "./globals.css";
 import { ProgressiveBlur } from "@/components/ui/progressive-blur";
 import { CustomCursor } from "@/components/ui/custom-cursor";
 import { Footer } from "@/components/layout/footer";
+import { QueryProvider } from "@/components/providers/query-provider";
 
 const antonio = Antonio({
   subsets: ["latin"],
@@ -20,16 +21,18 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+  }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en" className={`${antonio.variable} bg-onx-black`}>
       <body className="font-antonio text-onx-white antialiased">
-        {children}
-        <ProgressiveBlur />
-        <CustomCursor />
-        <Footer />
+        <QueryProvider>
+          {children}
+          <ProgressiveBlur />
+          <CustomCursor />
+          <Footer />
+        </QueryProvider>
       </body>
     </html>
   );
