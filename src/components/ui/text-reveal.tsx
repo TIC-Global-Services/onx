@@ -40,7 +40,7 @@ export function TextReveal({ text, secondaryText, className = "", starting = "to
           start: starting,
           end: isDesktop ? "end" : "+=100%",
           scrub: 0.7,
-          markers:true
+         
         }
       });
     });

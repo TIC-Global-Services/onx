@@ -147,16 +147,16 @@ export function ArenaSplitSection() {
           )}
 
           {/* Show All Button at the bottom */}
-          <div className="w-full flex justify-end mt-8 pt-4 border-t border-onx-near-black/10">
+          {/* <div className="w-full flex justify-end items-end mt-8 pt-4 ">
             <a 
               href={shopifyUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-onx-near-black text-white px-10 py-4 text-xs uppercase font-bold tracking-[0.15em] hover:bg-onx-red hover:text-white transition-colors duration-300 shadow-md text-center"
+              className="bg-onx-near-black text-b px-8 py-3 text-xs uppercase font-bold tracking-[0.15em] hover:bg-onx-red hover:text-white transition-colors duration-300 shadow-md text-center"
             >
               Show All Products
             </a>
-          </div>
+          </div> */}
 
         </div>
 

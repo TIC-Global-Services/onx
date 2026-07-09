@@ -24,7 +24,7 @@ export function Header({ dark = false, absolute = false, isHome = false }: Heade
         {/* Center: ONX Logo */}
         <div className="flex-1 flex justify-center">
           <Link href="/" className="flex items-center">
-            <img src={isHome ? "/images/arc-and-bore-enhanced.png" : "/images/arc and bore logo white.png"} alt="Arc & Bore Logo" className={` ${!isHome ?"h-40":"h-32"}  md:h-40 w-auto object-contain translate-y-1`} />
+            <img src={isHome ? "/images/arc-and-bore-enhanced.png" : "/images/arc and bore logo white.png"} alt="Arc & Bore Logo" className={` ${!isHome ?"h-50":"h-40"}  w-auto object-contain translate-y-1`} />
           </Link>
         </div>
 
