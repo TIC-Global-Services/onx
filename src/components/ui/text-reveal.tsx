@@ -17,7 +17,7 @@ interface TextRevealProps {
   pin?: boolean;
 }
 
-export function TextReveal({ text, secondaryText, className = "", starting = "center center", pin = true }: TextRevealProps) {
+export function TextReveal({ text, secondaryText, className = "", starting = "top top", pin = true }: TextRevealProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLParagraphElement>(null);
 
@@ -38,8 +38,9 @@ export function TextReveal({ text, secondaryText, className = "", starting = "ce
           trigger: containerRef.current,
           pin: pin ? (containerRef.current?.closest("section") || true) : false,
           start: starting,
-          end: isDesktop ? "+=150%" : "+=100%",
+          end: isDesktop ? "end" : "+=100%",
           scrub: 0.7,
+          markers:true
         }
       });
     });

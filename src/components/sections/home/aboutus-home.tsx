@@ -20,7 +20,7 @@ export function AboutUsHomeSection() {
 
           <div className="mt-10">
             <TextReveal
-              starting="center 70%"
+              starting="top 90%"
               pin={false}
               text="The league spoke. We listened."
               className="text-[12vw] md:text-5xl tracking-wide leading-tight font-medium text-onx-near-black"

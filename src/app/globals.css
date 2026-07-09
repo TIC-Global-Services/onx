@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  /* ── Colors ── */
+  /* "?"? Colors "?"? */
   --color-onx-white: #FFFFFF;
   --color-onx-black: #000000;
   --color-onx-near-black: #1C1C1C;
@@ -15,12 +15,12 @@
   --color-onx-border: #E8E8E8;
   --color-onx-muted: #717171;
   
-  /* ── Font families ── */
+  /* "?"? Font families "?"? */
   --font-antonio: 'Antonio', sans-serif;
   --font-inter: 'Inter', sans-serif;
   --font-montserrat: 'Montserrat', sans-serif;
 
-  /* ── Custom font sizes ── */
+  /* "?"? Custom font sizes "?"? */
   --text-hero-xl: 140px;
   --text-hero-xl--line-height: 1;
   --text-hero-xl--font-weight: 100;
@@ -100,6 +100,17 @@
   --text-micro: 10px;
   --text-micro--line-height: 1.2;
   --text-micro--font-weight: 300;
+}
+
+/* Hide scrollbar for elements with hide-scrollbar class */
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }
 
 /* Progressive Backdrop Blur Overlay */
