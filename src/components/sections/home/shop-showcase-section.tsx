@@ -80,14 +80,14 @@ export function ShopShowcaseSection() {
         }
       `}} />
 
-      <div className="max-w-[1440px] mx-auto px-5 md:px-10">
+      <div className="px-5 md:px-[5%]">
 
         {/* Description paragraph */}
         <div className="mx-auto max-w-[900px] text-center">
           <p className="text-xl md:text-xl text-onx-near-black font-medium uppercase leading-wide mb-8">Precision Performance</p>
           <TextReveal
             text="We are built for those who thrive on precision, discipline, and performance. Designed as a space where focus meets action, it brings together modern training environments with a strong foundation in skill-based sports like shooting and archery."
-            className="text-3xl text-3xl font-thin md:font-normal leading-tight text-onx-near-black"
+            className="text-3xl font-thin md:font-normal leading-tight text-onx-near-black"
             pin={false}
           />
         </div>

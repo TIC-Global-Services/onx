@@ -27,19 +27,13 @@ export function CategoryLinksSection({ categories }: CategoryLinksSectionProps) 
               {/* Leading image (for Rifles, Archery, Darts) */}
               <div className="w-[60px] h-[40px] md:w-[100px] md:h-[60px] flex-shrink-0 flex items-center justify-center rounded overflow-hidden mix-blend-multiply">
                 {category.name.toLowerCase() === 'shooting' && (
-                  <Link href="https://arc-bore-co.myshopify.com/">
-                    <img src="/images/explore/pistol2.png" alt="Shooting" className="w-full h-full object-contain" />
-                  </Link>
+                  <img src="/images/explore/pistol2.png" alt="Shooting" className="w-full h-full object-contain" />
                 )}
                 {category.name.toLowerCase() === 'archery' && (
-                  <Link href="https://arc-bore-co.myshopify.com/">
-                    <img src="/images/explore/arrow.png" alt="Archery" className="w-full h-full object-contain" />
-                  </Link>
+                  <img src="/images/explore/arrow.png" alt="Archery" className="w-full h-full object-contain" />
                 )}
                 {category.name.toLowerCase() === 'darts' && (
-                  <Link href="https://arc-bore-co.myshopify.com/">
-                    <img src="/images/explore/archery.png" alt="Darts" className="w-full h-full object-contain" />
-                  </Link>
+                  <img src="/images/explore/archery.png" alt="Darts" className="w-full h-full object-contain" />
                 )}
               </div>
 
