@@ -16,56 +16,56 @@ export function ContactInfoSection() {
         <div className="w-full lg:w-2/4 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
 
           {/* Bookings */}
-          <div>
+          {/* <div>
             <h4 className="text-base md:text-xl uppercase font-bold tracking-tight mb-4 text-onx-near-black">BOOKINGS</h4>
             <div className="flex flex-col gap-1 text-sm md:text-base text-onx-near-black/70">
               <a href="mailto:book@onxsportz.com" className="hover:text-onx-red transition-colors">book@ArcandBore.com</a>
               <a href="tel:XXXXX XXXXX" className="hover:text-onx-red transition-colors">XXXXX XXXXX</a>
             </div>
-          </div>
+          </div> */}
 
           {/* General Enquiries */}
           <div>
-            <h4 className="text-base md:text-xl uppercase font-bold tracking-tight mb-4 text-onx-near-black">GENERAL ENQUIRIES</h4>
+            <h4 className="text-base md:text-xl uppercase font-bold tracking-tight mt-1 mb-1 text-onx-near-black">GENERAL ENQUIRIES</h4>
             <div className="flex flex-col gap-1 text-sm md:text-base text-onx-near-black/70">
               <a href="mailto:hello@onxsportz.com" className="hover:text-onx-red transition-colors">hello@ArcandBore.com</a>
-              <a href="tel:XXXXX XXXXX" className="hover:text-onx-red transition-colors">XXXXX XXXXX</a>
+              <a href="tel:9840022300" className="hover:text-onx-red transition-colors">9840022300</a>
             </div>
           </div>
 
           {/* Location */}
-          <div>
+          {/* <div>
             <h4 className="text-base md:text-xl uppercase font-bold tracking-tight mb-4 text-onx-near-black">LOCATION</h4>
             <div className="text-sm md:text-base text-onx-near-black/70 leading-[1.5]">
               Arc&Bore<br />
               Anna Nagar, Chennai<br />
               Tamil Nadu
             </div>
-          </div>
+          </div> */}
 
           {/* Working Hours */}
-          <div>
+          {/* <div>
             <h4 className="text-base md:text-xl uppercase font-bold tracking-tight mb-4 text-onx-near-black">WORKING HOURS</h4>
             <div className="text-sm md:text-base text-onx-near-black/70 leading-[1.5]">
               Tue - Sat: 9:00 AM - 9:00 PM<br />
               Sun: 9:00 AM - 12:30 PM<br />
               Mon: Closed
             </div>
-          </div>
+          </div> */}
 
           {/* Social */}
-          <div>
+          {/* <div>
             <h4 className="text-base md:text-xl uppercase font-bold tracking-tight mb-4 text-onx-near-black">SOCIAL</h4>
             <div className="flex flex-col gap-1 text-sm md:text-base text-onx-near-black/70">
               <Link href="#" className="hover:text-onx-red transition-colors">Instagram</Link>
               <Link href="#" className="hover:text-onx-red transition-colors">WhatsApp</Link>
             </div>
-          </div>
+          </div> */}
 
         </div>
 
         {/* Right Column Image */}
-        <div className="w-full lg:w-1/4 h-[300px] lg:h-[400px] bg-onx-near-black/5 relative overflow-hidden">
+        <div className="w-full h-[300px] lg:h-[450px] bg-onx-near-black/5 relative overflow-hidden">
           <img
             src="/images/contact/contact-gun.png"
             alt="Handgun closeup"
