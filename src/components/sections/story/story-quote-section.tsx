@@ -15,6 +15,8 @@ export function StoryQuoteSection() {
         <TextReveal
           text='"For us, the vision has always been clear: to build something that stands for purpose, precision, and progress. Every decision, every detail, and every step forward reflects a commitment to doing things the right way."'
           className="text-3xl sm:text-[32px] md:text-[40px] lg:text-3xl font-thin md:font-normal leading-[1.3] text-onx-near-black max-w-[350px] md:max-w-[800px] mb-16 tracking-wide"
+          starting="top 80%"
+          pin={false}
         />
 
         <button className="mt-4 bg-onx-white border border-onx-near-black text-onx-black px-10 py-4 text-sm uppercase font-bold tracking-[0.15em] hover:bg-onx-black hover:text-white transition-colors shadow-sm">

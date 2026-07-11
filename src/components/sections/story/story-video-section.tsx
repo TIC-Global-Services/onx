@@ -12,14 +12,14 @@ export function StoryVideoSection() {
 
         {/* Right: Video Placeholder */}
         <div className="w-full md:w-1/2 aspect-[4/5] md:aspect-[16/9] bg-onx-near-black/20 relative group cursor-pointer overflow-hidden flex items-center justify-center rounded-sm">
-          <img
-            src="/images/story/video-thumb.jpg"
-            alt="Video thumbnail"
-            className="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-multiply group-hover:scale-105 transition-transform duration-700"
+          <video
+            src="/archery.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
           />
-          <div className="w-16 h-16 md:w-20 md:h-20 bg-onx-white rounded-sm flex items-center justify-center z-10 shadow-xl group-hover:bg-onx-near-black transition-colors duration-300">
-            <span className="text-onx-near-black text-xl md:text-2xl ml-1 group-hover:text-onx-white transition-colors duration-300">▶</span>
-          </div>
         </div>
 
       </div>

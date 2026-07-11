@@ -38,9 +38,8 @@ export function TextReveal({ text, secondaryText, className = "", starting = "to
           trigger: containerRef.current,
           pin: pin ? (containerRef.current?.closest("section") || true) : false,
           start: starting,
-          end: isDesktop ? "end" : "+=100%",
-          scrub: 0.7,
-         
+          end: isDesktop ? "end end" : "+=100%",
+          scrub: 0.7
         }
       });
     });
