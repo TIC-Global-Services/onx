@@ -26,13 +26,6 @@ export const footerAbout = {
     "We are a precision-focused indoor training space built for those who value control, discipline, and performance. Designed with modern facilities and a refined environment, it offers a consistent and focused shooting experience for both beginners and professionals.",
 };
 
-export const footerNewsletter = {
-  title: "Newsletter",
-  description: "Sign up for exclusive offers, original stories and more.",
-  placeholder: "Your Email",
-  buttonLabel: "Subscribe",
-};
-
 export const socialLinks = [
   { label: "WhatsApp", href: "#", icon: "MessageCircle" as const },
   { label: "Email", href: "mailto:hello@arcandbore.com", icon: "Mail" as const },

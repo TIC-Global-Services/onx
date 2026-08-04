@@ -292,21 +292,7 @@ export function ProductsCardsSection() {
         </button>
       </div>
 
-      {/* ── Progress bar + mobile counter ───────────────────────────────── */}
-      <div className="px-4 md:px-8 mt-4">
-        <div className="relative h-px bg-onx-border-light overflow-hidden">
-          <div
-            className="absolute inset-y-0 left-0 bg-onx-near-black transition-[width] duration-500 ease-out"
-            style={{ width: `${progressPct}%` }}
-          />
-        </div>
-        {/* Slide counter — mobile only */}
-        <div className="md:hidden mt-3 text-center">
-          <span className="text-xs text-onx-near-black/40 tracking-[0.2em] tabular-nums">
-            {String(current + 1).padStart(2, "0")} / {String(totalSlides).padStart(2, "0")}
-          </span>
-        </div>
-      </div>
+
     </section>
   );
 }
